@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h4>JavaScript Strings and Escape Character</h4>
+    <p><a href="https://www.w3schools.com/js/js_strings.asp">https://www.w3schools.com/js/js_strings.asp</a></p>
+
+    <script>
+
+        // 請觀察底下的變數透過等號設定值後，
+        // 透過變數名稱再次取出，會得到什麼結果?
+        // "C" 代表字串
+        // 'c'
+        var str = '"C"';
+        var rstr1 = "A''B";
+        var rstr11 = "A\"\"B"
+        console.log(str);
+        console.log(rstr1);
+        console.log(rstr11);
+        // \t 代表 tab
+        // \n 代表 new line
+        // \\ 代表 backslash
+        var str2 = "C:\temp";
+        var rstr2 = "C:\\temp";
+        var rstr21 = "C:\atemp";
+        var rstr22 = "C:\ntemp";
+        console.log(str2);
+        console.log(rstr2);
+        console.log(rstr21);
+        console.log(rstr22);
+
+        var str3 = str4;
+        console.log(str3);
+
+    </script>
+</body>
+
+</html>

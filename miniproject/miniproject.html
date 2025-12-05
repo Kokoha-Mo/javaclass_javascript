@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF14 技能資料庫模擬</title>
+    <link rel="stylesheet" href="miniproject.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <h1>FF14 職業技能資料庫</h1>
+        <div id="search-bar">
+            <input type="text" placeholder="搜尋技能名稱...">
+            <button>搜尋</button>
+        </div>
+    </header>
+
+    <div id="app-container">
+        <aside id="sidebar-nav">
+            <div class="nav-section">
+                <h3>🛠️ 職業分類</h3>
+                <ul id="job-list">
+                    <li><a href="#DarkKnight">暗黑騎士 (DRK)</a></li>
+                    <li><a href="#Samurai">武士 (SAM)</a></li>
+                    <li><a href="#Machinist">機工士 (MCH)</a></li>
+                    <li><a href="#WhiteMage">白魔法師 (WHM)</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section filter-section">
+                <h3>🔍 篩選器</h3>
+                <label for="skill-type">類型：</label>
+                <select id="skill-type">
+                    <option value="all">所有類型</option>
+                    <option value="battle">戰技</option>
+                    <option value="ability">能力</option>
+                </select>
+            </div>
+        </aside>
+
+        <main id="main-content">
+            <h2 id="job-title">請選擇一個職業</h2>
+            <p id="job-description">點擊左側導航欄，載入該職業的技能資訊。</p>
+
+            <section id="skill-list-container">
+            </section>
+        </main>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

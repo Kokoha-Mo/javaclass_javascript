@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <!-- 10. 於網頁放置一顆 按鈕(A) -->
+    <button>按鈕(0)</button>
+    <!-- 15. 測試加入滑鼠點擊事件，並直接呼叫 console.log() -->
+    <button onclick="console.log('按鈕(A)')">按鈕(A)</button>
+
+    <!-- 20. 於網頁放置一顆 按鈕(B) ，也加入點擊事件，事件中執行指定的 function: btnClick -->
+    <button onclick="btnClick()">按鈕(B)</button>
+    <script>
+        function btnClick() {
+            console.log("按鈕(B)");
+        }
+    </script>
+
+    <!-- 25. function內容：在 console 顯示一段文字 -->
+    <p id="C">按鈕(C)</p>
+    <button onclick="changeText()">按鈕(C)</button>
+    <script>
+        function changeText() {
+            document.getElementById("C").innerText = "SupriseMFK";
+        }
+    </script>
+
+</body>
+
+</html>

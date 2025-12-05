@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <pre>
+        var :全域變數，可重複宣告
+        let :不可重複宣告
+        const :常數，不可重複宣告
+    </pre>
+
+    <h3>JavaScript Versions：<a
+            href="https://www.w3schools.com/js/js_versions.asp">https://www.w3schools.com/js/js_versions.asp</a></h3>
+    <h3>ECMAScript 5 - 2009：<a
+            href="https://www.w3schools.com/js/js_es5.asp">https://www.w3schools.com/js/js_es5.asp</a></h3>
+    <h3>ECMAScript 6 - 2015：<a
+            href="https://www.w3schools.com/js/js_es6.asp">https://www.w3schools.com/js/js_es6.asp</a></h3>
+
+    <h3>JavaScript Let：<a href="https://www.w3schools.com/js/js_let.asp">https://www.w3schools.com/js/js_let.asp</a>
+    </h3>
+    <h3>JavaScript Const：<a
+            href="https://www.w3schools.com/js/js_const.asp">https://www.w3schools.com/js/js_const.asp</a></h3>
+
+    <script>
+        // 10. var、let、const 宣告變數的方法
+        var a = 1;
+        let b = 2;
+        const c = 3;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+
+        // 20. const 變數宣告並給值後是否還能修改?Ans:不能
+        // const d = 4;
+        // console.log(d);
+        // d = 5;
+        // console.log(d);
+        console.clear();
+        // 30. 在 if 判斷句中，透過 var、let 宣告兩個變數，並觀察他們的作用域
+        // if 的詳細說明在40號資料夾
+        if (true) {
+            var e = 6;
+            let f = 7;
+            const h = 8;
+        }
+        // console.log(h);
+        console.log(e);
+        // console.log(f);
+        // var為全域作用域
+        // let為區塊作用域
+
+        // 40. 測試 var 宣告相同的變數名稱
+        var g = 20;
+        var g = 30;
+        console.log(g);
+        // 50. 測試 let 宣告相同的變數名稱 
+
+    </script>
+</body>
+
+</html>

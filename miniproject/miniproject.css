@@ -1,0 +1,174 @@
+/* --- 基礎重置與字體 --- */
+:root {
+    --bg-dark: #ffffff;
+    /* 主要背景：極深的藍黑 */
+    --bg-medium: #51524e;
+    /* 側邊欄/卡片背景：深藍灰 */
+    --primary-color: #007bff;
+    /* 主題色：官方深藍 */
+    --accent-color: #ffc107;
+    /* 強調色：金色/橙黃色 */
+    --text-color: #e5e5e5;
+    /* 標準文字色 */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    /* 使用深藍黑背景 */
+    color: var(--text-color);
+}
+
+/* --- 1. Header 佈局 --- */
+#main-header {
+    background-color: #51524e;
+    /* 比背景更深的黑色 */
+    padding: 15px 30px;
+    /* 增加底線，模擬科技感邊界 */
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-header h1 {
+    font-size: 1.8em;
+    color: var(--accent-color);
+    /* 標題使用金色強調 */
+    margin: 0;
+    text-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+    /* 增加發光效果 */
+}
+
+/* --- 2. App Container 佈局 (保持 Grid) --- */
+#app-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    max-width: 1400px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* --- 3. Sidebar 樣式 --- */
+#sidebar-nav {
+    background-color: var(--bg-medium);
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    /* 輕微的藍色邊框 */
+}
+
+#sidebar-nav h3 {
+    border-bottom: 2px solid var(--primary-color);
+    /* 藍色分隔線 */
+    padding-bottom: 5px;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+#job-list {
+    list-style: none;
+    padding: 0;
+}
+
+#job-list a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.2s;
+}
+
+#job-list a:hover {
+    color: var(--accent-color);
+    /* Hover 時變成金色 */
+    font-weight: bold;
+}
+
+/* --- 4. Main Content 樣式 --- */
+#main-content {
+    background-color: var(--bg-medium);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+#job-title {
+    color: var(--primary-color);
+    /* 職業標題使用主題藍 */
+    border-bottom: 1px dashed #444;
+    padding-bottom: 10px;
+}
+
+#skill-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* --- 技能卡片樣式 --- */
+.skill-card {
+    background-color: #2a2e34;
+    /* 比背景稍淺，作為卡片基礎色 */
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+    border-left: 5px solid var(--primary-color);
+    /* 左側藍色邊條強調 */
+}
+
+.skill-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 2px solid var(--accent-color);
+    /* 技能圖示使用金色邊框 */
+}
+
+.skill-details p {
+    margin: 4px 0;
+    font-size: 0.9em;
+}
+
+.effect-desc {
+    color: #c9c9c9;
+    margin-top: 10px !important;
+    font-style: italic;
+}
+
+/* 技能類型顏色高亮 (可自行擴充) */
+.skill-type {
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.type-戰技 {
+    background-color: #d9534f;
+}
+
+/* 紅色 */
+.type-能力 {
+    background-color: #5cb85c;
+}
+
+/* 綠色 */
