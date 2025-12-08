@@ -7,27 +7,45 @@
 
 <body>
 
-    <h3>JavaScript Number Reference：<a href="https://www.w3schools.com/jsref/jsref_obj_number.asp">https://www.w3schools.com/jsref/jsref_obj_number.asp</a></h3>
+    <h3>JavaScript Number Reference：<a
+            href="https://www.w3schools.com/jsref/jsref_obj_number.asp">https://www.w3schools.com/jsref/jsref_obj_number.asp</a>
+    </h3>
     <h3>TED 二進位是怎麼運作的？<a
             href="https://www.ted.com/talks/jose_americano_n_l_f_de_freitas_how_exactly_does_binary_code_work?language=zh-tw">
-            https://www.ted.com/talks/jose_americano_n_l_f_de_freitas_how_exactly_does_binary_code_work?language=zh-tw</a></h3>
+            https://www.ted.com/talks/jose_americano_n_l_f_de_freitas_how_exactly_does_binary_code_work?language=zh-tw</a>
+    </h3>
     <h3>著名的 0.30000000000000004：<a href="http://0.30000000000000004.com/"> http://0.30000000000000004.com/</a></h3>
 
     <script>
-        
+
         // 底下數值運算後，請透過console.log查看結果
         // 10. 宣告一個變數 result = 1 + 2
+        let result = 1 + 2;
+        console.log(result);
 
-        
+
         // 20. 設定 result = 0.2 + 0.1
+        result = 0.2 + 0.1;
+        console.log(result);
 
 
         // 30. 處理方法：https://www.w3schools.com/js/js_numbers.asp
-
+        result = (0.2 * 10 + 0.1 * 10) / 10;
+        console.log(result);
 
         // 40. Number 能處理的最大範圍 -2^53到2^53之間（不含兩個端點）
-        
-        
+        console.log(Number.MAX_SAFE_INTEGER);
+        console.log(Number.MIN_SAFE_INTEGER);
+
+        let maxnum = Number.MAX_SAFE_INTEGER;
+
+        console.log(maxnum);
+        console.log(maxnum + 1);
+        console.log(maxnum + 2);
+        console.log(maxnum + 3);
+        console.log(maxnum + 4);
+        console.log(maxnum + 5);
+
     </script>
 
 </body>

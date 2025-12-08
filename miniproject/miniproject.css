@@ -104,7 +104,7 @@ body {
 
 #skill-list-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     margin-top: 20px;
 }
@@ -113,7 +113,7 @@ body {
 .skill-card {
     background-color: #2a2e34;
     /* 比背景稍淺，作為卡片基礎色 */
-    padding: 15px;
+    padding: 5px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s;
@@ -121,22 +121,64 @@ body {
     /* 左側藍色邊條強調 */
 }
 
+.skill-tooltip {
+    /* 預設隱藏 */
+    display: none;
+
+    /* 浮動定位 */
+    position: absolute;
+    top: 0;
+    /* 讓它從卡片上方開始 */
+    left: 100%;
+    /* 讓它出現在卡片右側 */
+
+    /* 樣式設定 */
+    width: 300px;
+    /* 提示框寬度 */
+    padding: 15px;
+    background-color: rgba(20, 20, 20, 0.95);
+    /* 深色半透明背景 */
+    color: #fff;
+    border: 1px solid #777;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    /* 確保它在最上層 */
+    pointer-events: none;
+    /* 讓滑鼠可以穿透 Tooltip，避免遮擋其他元素 (可選) */
+    transform-origin: left top;
+}
+
+.skill-card.left-side .skill-tooltip {
+    right: 100%;
+    /* 從卡片左邊向外推 100% */
+    left: auto;
+    /* 取消左側定位 */
+    transform-origin: right top;
+}
+
+/* 顯示 Tooltip */
+.skill-card.active .skill-tooltip {
+    display: block;
+}
+
 .skill-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
+
+
+/* 2. 標題區 */
 .skill-header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #444;
-    padding-bottom: 8px;
-    margin-bottom: 8px;
+
 }
 
+
 .skill-icon {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin-right: 10px;
     border-radius: 4px;
     border: 2px solid var(--accent-color);

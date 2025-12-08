@@ -6,18 +6,30 @@
 </head>
 
 <body>
-
+    <pre>
+        1.物件:屬性跟方法的集合
+        2.甚麼時候需要物件?用了很多變數再記錄某個東西
+        x[8]="電腦" ==> 陣列
+        y["cat"]="貓" ==> 物件
+        let z=[] ==>宣告一個空陣列
+        let a={} ==>宣告一個空物件
+    </pre>
     <h4>JavaScript Objects</h4>
-    <p><a href="https://www.w3schools.com/js/js_object_definition.asp">https://www.w3schools.com/js/js_object_definition.asp</a></p>
+    <p><a
+            href="https://www.w3schools.com/js/js_object_definition.asp">https://www.w3schools.com/js/js_object_definition.asp</a>
+    </p>
 
     <script>
         // 10. 使用 {} create object
         //      object 可以包含屬性和方法
-        //     { key1:value1, key2:value2.. }
-
+        // 陣列結構: [value1, value2..]
+        // 物件結構: { key1:value1, key2:value2.. }
+        let student = { Chinese: 100, Math: 90, English: 80 }
         // 30. 透過 .  取得 | 新增 object 的屬性
-
+        console.log(student)
+        console.log(student.Chinese)
         // 40. 透過 [] 取得 | 新增 object 的屬性
+        console.log(student["Math"])
     </script>
 
 </body>

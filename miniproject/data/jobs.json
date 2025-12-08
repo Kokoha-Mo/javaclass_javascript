@@ -1,0 +1,1109 @@
+{
+    "Paladin": {
+        "name_tw": "騎士",
+        "role_tw": "坦克",
+        "description_tw": "以單手劍和盾作為武器的戰鬥精英特職，是以吸引敵方仇恨，保護隊友為責的防護職業。",
+        "skills": [
+            {
+                "id": "pld1",
+                "name_tw": "先鋒劍",
+                "level": 1,
+                "type": "戰技",
+                "range": "3米",
+                "area": null,
+                "cast_time": null,
+                "cooldown": "2.50秒",
+                "potency": 220,
+                "combo_req": "",
+                "combopotency": null,
+                "comboeffect_tw": "",
+                "effect_tw": "對目標發動物理攻擊。",
+                "additional_effect_tw": null,
+                "add_effect_duration": null,
+                "duration": null,
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld2",
+                "name_tw": "戰逃反應",
+                "level": 2,
+                "type": "能力",
+                "range": null,
+                "area": null,
+                "cast_time": null,
+                "cooldown": "60秒",
+                "potency": null,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "一定時間內，自身發動攻擊的傷害提高25%。",
+                "additional_effect_tw": "瀝血劍預備",
+                "add_effect_duration": "30秒",
+                "duration": "20秒",
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld3",
+                "name_tw": "暴亂劍",
+                "level": 4,
+                "type": "戰技",
+                "range": "3米",
+                "area": null,
+                "cast_time": null,
+                "cooldown": "2.50秒",
+                "potency": 170,
+                "combo_req": "先鋒劍",
+                "combopotency": 330,
+                "comboeffect_tw": "恢復自身魔力",
+                "effect_tw": "對目標發動物理攻擊。",
+                "additional_effect_tw": null,
+                "add_effect_duration": null,
+                "duration": null,
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld4",
+                "name_tw": "全蝕斬",
+                "level": 6,
+                "type": "戰技",
+                "range": null,
+                "area": "5米",
+                "cast_time": null,
+                "cooldown": "2.50秒",
+                "potency": 120,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "對自身周圍的敵人發動物理攻擊。",
+                "additional_effect_tw": "提升仇恨",
+                "add_effect_duration": null,
+                "duration": null,
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld5",
+                "name_tw": "盾牌猛擊",
+                "level": 10,
+                "type": "戰技",
+                "range": "3米",
+                "area": null,
+                "cast_time": null,
+                "cooldown": "2.50秒",
+                "potency": 100,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "對目標發動物理攻擊。",
+                "additional_effect_tw": "暈眩",
+                "add_effect_duration": "6秒",
+                "duration": null,
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld7",
+                "name_tw": "鋼鐵信念",
+                "level": 10,
+                "type": "能力",
+                "range": null,
+                "area": null,
+                "cast_time": null,
+                "cooldown": "2秒",
+                "potency": null,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "極大幅度增加戰鬥時獲得的仇恨量，再次發動時則取消該狀態",
+                "additional_effect_tw": "暈眩",
+                "add_effect_duration": "6秒",
+                "duration": "永久",
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld8",
+                "name_tw": "投盾",
+                "level": 15,
+                "type": "戰技",
+                "range": "20米",
+                "area": null,
+                "cast_time": null,
+                "cooldown": "2.50秒",
+                "potency": 100,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "對目標發動遠距離物理攻擊。",
+                "additional_effect_tw": "提升仇恨",
+                "add_effect_duration": null,
+                "duration": null,
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld9",
+                "name_tw": "戰女神之怒",
+                "level": 26,
+                "type": "戰技",
+                "range": "3米",
+                "area": null,
+                "cast_time": null,
+                "cooldown": "2.50秒",
+                "potency": 100,
+                "combo_req": "暴亂劍",
+                "combopotency": 330,
+                "comboeffect_tw": null,
+                "effect_tw": "對目標發動物理攻擊。",
+                "additional_effect_tw": null,
+                "add_effect_duration": null,
+                "duration": null,
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld10",
+                "name_tw": "預警",
+                "level": 38,
+                "type": "能力",
+                "range": null,
+                "area": null,
+                "cast_time": null,
+                "cooldown": "120秒",
+                "potency": null,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "一定時間內，將自身所受的傷害減輕30%。",
+                "additional_effect_tw": null,
+                "add_effect_duration": null,
+                "duration": "15秒",
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld11",
+                "name_tw": "厄運流轉",
+                "level": 50,
+                "type": "能力",
+                "range": null,
+                "area": "5米",
+                "cast_time": null,
+                "cooldown": "30秒",
+                "potency": 140,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊。",
+                "additional_effect_tw": "持續傷害\n威力:30",
+                "add_effect_duration": "15秒",
+                "duration": null,
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld12",
+                "name_tw": "深奧之靈",
+                "level": 30,
+                "type": "能力",
+                "range": "3米",
+                "area": null,
+                "cast_time": null,
+                "cooldown": "30秒",
+                "potency": 270,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "對目標發動物理攻擊。",
+                "additional_effect_tw": "恢復自身魔力",
+                "add_effect_duration": null,
+                "duration": null,
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld13",
+                "name_tw": "盾陣",
+                "level": 35,
+                "type": "能力",
+                "range": null,
+                "area": null,
+                "cast_time": null,
+                "cooldown": "5秒",
+                "potency": null,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "一定時間內，將自身所受的傷害減輕15%。",
+                "additional_effect_tw": null,
+                "add_effect_duration": null,
+                "duration": "6秒",
+                "cast_req": "忠義 50點",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld14",
+                "name_tw": "日珥斬",
+                "level": 40,
+                "type": "戰技",
+                "range": null,
+                "area": "5米",
+                "cast_time": null,
+                "cooldown": "2.50秒",
+                "potency": 100,
+                "combo_req": "全蝕斬",
+                "combopotency": 220,
+                "comboeffect_tw": "恢復自身魔力/n神聖魔法效果提高:下次發動聖靈或聖環不需要詠唱時間，同時威力提高",
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊。",
+                "additional_effect_tw": "提升仇恨",
+                "add_effect_duration": "30秒",
+                "duration": null,
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld15",
+                "name_tw": "保護",
+                "level": 45,
+                "type": "能力",
+                "range": "20米",
+                "area": null,
+                "cast_time": null,
+                "cooldown": "120秒",
+                "potency": null,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "替目標隊員承受來自敵人的攻擊，但對部分效果無效，與目標的距離不能超過20米",
+                "additional_effect_tw": null,
+                "add_effect_duration": null,
+                "duration": "12秒",
+                "cast_req": "忠義 50點",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld16",
+                "name_tw": "神聖領域",
+                "level": 50,
+                "type": "能力",
+                "range": null,
+                "area": null,
+                "cast_time": null,
+                "cooldown": "420秒",
+                "potency": null,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "一定時間內，除特定攻擊之外其他所有對自身發動的攻擊均無效",
+                "additional_effect_tw": null,
+                "add_effect_duration": null,
+                "duration": "10秒",
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld17",
+                "name_tw": "壁壘",
+                "level": 52,
+                "type": "能力",
+                "range": null,
+                "area": null,
+                "cast_time": null,
+                "cooldown": "90秒",
+                "potency": null,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "一定時間內，受到攻擊必定發動格擋，並對攻擊者造成等額傷害",
+                "additional_effect_tw": null,
+                "add_effect_duration": null,
+                "duration": "10秒",
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld18",
+                "name_tw": "瀝血劍",
+                "level": 54,
+                "type": "戰技",
+                "range": "3米",
+                "area": null,
+                "cast_time": null,
+                "cooldown": "2.50秒",
+                "potency": 700,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "對目標發動物理攻擊。",
+                "additional_effect_tw": null,
+                "add_effect_duration": null,
+                "duration": null,
+                "cast_req": "瀝血劍預備狀態中",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "pld19",
+                "name_tw": "聖光幕簾",
+                "level": 56,
+                "type": "能力",
+                "range": null,
+                "area": "30米",
+                "cast_time": null,
+                "cooldown": "90秒",
+                "potency": null,
+                "combo_req": null,
+                "combopotency": null,
+                "comboeffect_tw": null,
+                "effect_tw": "為自身及周圍隊員附加能夠抵禦一定傷害的防護罩\n防護罩效果:抵銷相當於騎士自身最大體力10%的傷害量",
+                "additional_effect_tw": "恢復目標的體力\n恢復力:400",
+                "add_effect_duration": null,
+                "duration": "30秒",
+                "cast_req": null,
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            }
+        ]
+    },
+    "Warrior": {
+        "name_tw": "戰士",
+        "role_tw": "坦克",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "DarkKnight": {
+        "name_tw": "暗黑騎士",
+        "role_tw": "坦克",
+        "description_tw": "專注於暗影魔法的防禦者，犧牲自身生命值來為隊伍承受傷害，是隊伍的主力堅盾。",
+        "skills": [
+            {
+                "id": "drk1",
+                "name_tw": "吸血劍",
+                "level": 30,
+                "type": "戰技",
+                "cooldown": 2.5,
+                "potency": 200,
+                "effect_tw": "對目標造成單體傷害，並恢復自身傷害值一部分的HP。",
+                "icon_url": "icons/drk/drk_souleater.png"
+            },
+            {
+                "id": "drk2",
+                "name_tw": "至黑之夜",
+                "level": 70,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "對自身或隊友施加一個能吸收傷害的護盾，如果護盾未被擊破，則返還消耗的魔力。",
+                "icon_url": "icons/drk/drk_blackestnight.png"
+            },
+            {
+                "id": "drk3",
+                "name_tw": "暗影牆",
+                "level": 38,
+                "type": "能力",
+                "cooldown": 120,
+                "potency": 0,
+                "effect_tw": "減輕自身所受傷害 30%，持續 15 秒。",
+                "icon_url": "icons/drk/drk_shadowwall.png"
+            }
+        ]
+    },
+    "GunBreaker": {
+        "name_tw": "絕槍戰士",
+        "role_tw": "坦克",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "WhiteMage": {
+        "name_tw": "白魔道士",
+        "role_tw": "治療",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Scholar": {
+        "name_tw": "學者",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Astrologian": {
+        "name_tw": "占星術師",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Sage": {
+        "name_tw": "賢者",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Monk": {
+        "name_tw": "武僧",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Dragoon": {
+        "name_tw": "龍騎士",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Ninja": {
+        "name_tw": "忍者",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Samurai": {
+        "name_tw": "武士",
+        "role_tw": "近戰輸出",
+        "description_tw": "以華麗的刀法和快速的居合術釋放強大爆發傷害，專精於單體目標輸出。",
+        "skills": [
+            {
+                "id": "sam1",
+                "name_tw": "葉隱",
+                "level": 52,
+                "type": "能力",
+                "cooldown": 5,
+                "potency": 0,
+                "effect_tw": "消耗任意居合點數（雪月花），獲得等量的劍氣。",
+                "icon_url": "icons/sam/sam_hagakure.png"
+            },
+            {
+                "id": "sam2",
+                "name_tw": "燕飛",
+                "level": 74,
+                "type": "戰技",
+                "cooldown": 1,
+                "potency": 600,
+                "effect_tw": "極高的單體傷害，只能在釋放特定居合術後觸發。",
+                "icon_url": "icons/sam/sam_tsubamegaeshi.png"
+            },
+            {
+                "id": "sam3",
+                "name_tw": "曉天",
+                "level": 54,
+                "type": "能力",
+                "cooldown": 30,
+                "potency": 0,
+                "effect_tw": "位移到目標身邊並造成傷害，可在戰鬥中迅速調整位置。",
+                "icon_url": "icons/sam/sam_gyoten.png"
+            }
+        ]
+    },
+    "Reaper": {
+        "name_tw": "奪魂者",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Bard": {
+        "name_tw": "吟遊詩人",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Machinist": {
+        "name_tw": "機工士",
+        "role_tw": "遠程輸出",
+        "description_tw": "使用機械裝置、砲塔和槍械，維持遠程輸出，並在過熱狀態下發動高頻率攻擊。",
+        "skills": [
+            {
+                "id": "mch1",
+                "name_tw": "熱衝擊",
+                "level": 60,
+                "type": "戰技",
+                "cooldown": 1.5,
+                "potency": 400,
+                "effect_tw": "在過熱狀態下才能使用的單體攻擊，是爆發階段的核心技能。",
+                "icon_url": "icons/mch/mch_heatslash.png"
+            },
+            {
+                "id": "mch2",
+                "name_tw": "自動砲塔",
+                "level": 40,
+                "type": "能力",
+                "cooldown": 30,
+                "potency": 0,
+                "effect_tw": "召喚一個砲塔在場上自動攻擊敵人，提供持續輸出。",
+                "icon_url": "icons/mch/mch_autoturret.png"
+            },
+            {
+                "id": "mch3",
+                "name_tw": "超荷",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "進入過熱狀態，大幅提升戰技威力。",
+                "icon_url": "icons/mch/mch_hypercharge.png"
+            }
+        ]
+    },
+    "Dancer": {
+        "name_tw": "黑魔法師",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "BlackMage": {
+        "name_tw": "黑魔法師",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Summoner": {
+        "name_tw": "召喚士",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "RedMage": {
+        "name_tw": "紅魔道士",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Viper": {
+        "name_tw": "黑魔法師",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    },
+    "Pictomancer": {
+        "name_tw": "繪靈法師",
+        "role_tw": "輸出",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "skills": [
+            {
+                "id": "whm1",
+                "name_tw": "神速魔",
+                "level": 50,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "icon_url": "icons/whm/whm_swiftcast.png"
+            },
+            {
+                "id": "whm2",
+                "name_tw": "再生",
+                "level": 35,
+                "type": "魔法",
+                "cooldown": 2.5,
+                "potency": 0,
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "icon_url": "icons/whm/whm_regen.png"
+            },
+            {
+                "id": "whm3",
+                "name_tw": "天賜祝福",
+                "level": 60,
+                "type": "能力",
+                "cooldown": 60,
+                "potency": 0,
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "icon_url": "icons/whm/whm_benediction.png"
+            }
+        ]
+    }
+}

@@ -24,6 +24,7 @@
         // 2. 字串.indexOf() 函式
         //    可以幫助我們做什麼事情？ 呼叫後回傳了什麼？Ans:第一個P的索引
         console.log(test.indexOf("P"));
+        console.log(test.indexOf("Z")); //找不到會回傳-1
 
         // 3. 字串.lastIndexOf() 函式
         //    可以幫助我們做什麼事情？ 呼叫後回傳了什麼？Ans:最後一個P的索引
@@ -39,43 +40,53 @@
         console.log(demo.padStart(8, "0"));
 
         // // 6. 比較 substr()、substring()、slice()
-        // var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        // console.group("(0, 2)");
-        // console.log(`測試 substr    ${str.substr(0, 2)}`);
-        // console.log(`測試 substring ${str.substring(0, 2)}`);
-        // console.log(`測試 slice     ${str.slice(0, 2)}`);
-        // console.groupEnd();
+        // substr(m,n):從m開始，擷取n個字元
+        // substring(m,n):從m開始(若為負，以開頭為基準)，擷取到n
+        // slice(m,n):從m開始(若為負，以末尾為基準)，擷取到n
+        console.group("(0, 2)");
+        console.log(`測試 substr    ${str.substr(0, 2)}`);
+        console.log(`測試 substring ${str.substring(0, 2)}`);
+        console.log(`測試 slice     ${str.slice(0, 2)}`);
+        console.groupEnd();
 
-        // console.group("(3, 5)");
-        // console.log(`測試 substr    ${str.substr(3, 5)}`);
-        // console.log(`測試 substring ${str.substring(3, 5)}`);
-        // console.log(`測試 slice     ${str.slice(3, 5)}`);
-        // console.groupEnd();
+        console.group("(3, 5)");
+        console.log(`測試 substr    ${str.substr(3, 5)}`);
+        console.log(`測試 substring ${str.substring(3, 5)}`);
+        console.log(`測試 slice     ${str.slice(3, 5)}`);
+        console.groupEnd();
 
-        // console.group("(5, 3)");
-        // console.log(`測試 substr    ${str.substr(5, 3)}`);
-        // console.log(`測試 substring ${str.substring(5, 3)}`);
-        // console.log(`測試 slice     ${str.slice(5, 3)}`);
-        // console.groupEnd();
+        console.group("(5, 3)");
+        console.log(`測試 substr    ${str.substr(5, 3)}`);
+        console.log(`測試 substring ${str.substring(5, 3)}`);
+        console.log(`測試 slice     ${str.slice(5, 3)}`);
+        console.groupEnd();
 
-        // console.group("(3)");
-        // console.log(`測試 substr    ${str.substr(3)}`);
-        // console.log(`測試 substring ${str.substring(3)}`);
-        // console.log(`測試 slice     ${str.slice(3)}`);
-        // console.groupEnd();
+        console.group("(3)");
+        console.log(`測試 substr    ${str.substr(3)}`);
+        console.log(`測試 substring ${str.substring(3)}`);
+        console.log(`測試 slice     ${str.slice(3)}`);
+        console.groupEnd();
 
-        // console.group("(-5)");
-        // console.log(`測試 substr    ${str.substr(-5)}`);
-        // console.log(`測試 substring ${str.substring(-5)}`);
-        // console.log(`測試 slice     ${str.slice(-5)}`);
-        // console.groupEnd();
+        console.group("(-5)");
+        console.log(`測試 substr    ${str.substr(-5)}`);
+        console.log(`測試 substring ${str.substring(-5)}`);
+        console.log(`測試 slice     ${str.slice(-5)}`);
+        console.groupEnd();
 
         // 7. 上述三種擷取字串的函式，請挑選一個來完成底下練習
         // 0911222333 是 手機
         // 0423456789 是 市話
         var phones = "09112223330423456789";
-
+        // 手機
+        console.log(`手機(substr):${phones.substr(0, 10)}`);
+        console.log(`手機(substring):${phones.substring(0, 10)}`);
+        console.log(`手機(slice):${phones.slice(0, 10)}`);
+        // 市話
+        console.log(`市話(substr):${phones.substr(10, 10)}`);
+        console.log(`市話(substring):${phones.substring(10)}`);
+        console.log(`市話(slice):${phones.slice(-10)}`);
     </script>
 </body>
 

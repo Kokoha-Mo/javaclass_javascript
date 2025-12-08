@@ -3,20 +3,56 @@ let allJobData = {};
 
 // --- 函數 1：渲染單一技能卡片 ---
 function renderSkillCard(skill) {
+    // 檢查是否有連擊條件，用於決定是否顯示連擊區塊
+    const hasCombo = skill.combo_req || skill.combopotency;
+
+    // 連擊區塊的 HTML，只有在有連擊資訊時才生成
+    const comboHTML = hasCombo ? `
+        <div class="skill-combo">
+            <h5>連擊資訊</h5>
+            <p>
+                <strong>連擊條件:</strong> ${skill.combo_req || '—'}
+            </p>
+            <p>
+                <strong>連擊威力:</strong> ${skill.combopotency > 0 ? skill.combopotency : '—'}
+            </p>
+            ${skill.comboeffect_tw ? `<p><strong>連擊成功:</strong> ${skill.comboeffect_tw}</p>` : ''}
+        </div>
+    ` : ''; // 如果沒有連擊資訊，則為空字串
+
+    // 追加效果區塊的 HTML (新增)
+    const addEffectHTML = skill.additional_effect_tw ? `
+        <div class="skill-additional-effect">
+            <p><strong>追加效果:</strong> ${skill.additional_effect_tw}</p>
+            ${skill.add_effect_duration ? `<p><strong>持續時間:</strong> ${skill.add_effect_duration}</p>` : ''}
+        </div>
+    `: '';
+
     // 使用模板字符串生成技能卡片的HTML
     return `
-        <div class="skill-card">
+        <div class="skill-card" data-skill-id="${skill.id}">
             <div class="skill-header">
                 <img src="${skill.icon_url || 'default_icon.png'}" alt="${skill.name_tw}" class="skill-icon">
                 <h4>${skill.name_tw}</h4>
             </div>
-            <div class="skill-details">
-                <p><strong>等級要求:</strong> ${skill.level}</p>
-                <p><strong>類型:</strong> <span class="skill-type type-${skill.type}">${skill.type}</span></p>
-                <p><strong>威力 (Potency):</strong> ${skill.potency > 0 ? skill.potency : '—'}</p>
-                <p class="effect-desc">${skill.effect_tw}</p>
-            </div>
-        </div>
+            
+            <div class="skill-tooltip">
+                <div class="skill-stats">
+                    <p><strong>習得等級:</strong> ${skill.level}等</p>
+                    <p><strong>類型:</strong> <span class="skill-type type-${skill.type}">${skill.type}</span></p>
+                    <p><strong>距離:</strong> ${skill.range || '0米'}</p>
+                    <p><strong>範圍:</strong> ${skill.area || '0米'}</p>
+                    <p><strong>詠唱時間:</strong> ${skill.cast_time || '即時'}</p>
+                    <p><strong>復唱時間:</strong> ${skill.cooldown || '—'}</p>
+                    ${skill.potency ? `<p><strong>威力 (Potency):</strong> ${skill.potency || '—'}</p>` : ''}
+                    ${skill.duration ? `<p><strong>持續時間:</strong> ${skill.duration || '—'}</p > ` : ''}
+                    ${skill.cast_req ? `<p><strong>發動條件:</strong> ${skill.cast_req || '—'}</p >` : ''}
+                    ${comboHTML}
+                    ${addEffectHTML}
+                    <p class="effect-desc">${skill.effect_tw}</p>
+                </div >
+            </div >
+        </div >
     `;
 }
 
@@ -47,12 +83,13 @@ function renderJobPage(jobKey) {
 
     // 3. (可選) 高亮當前選擇的導航項目
     document.querySelectorAll('#job-list a').forEach(a => {
-        if (a.getAttribute('href') === `#${jobKey}`) {
+        if (a.getAttribute('href') === `#${jobKey} `) {
             a.classList.add('active-job');
         } else {
             a.classList.remove('active-job');
         }
     });
+    attachTooltipListeners();
 }
 
 
@@ -72,6 +109,28 @@ function updateSidebarNav(data) {
         }
     }
 }
+
+
+function attachTooltipListeners() {
+    // 選取所有技能卡片
+    const skillCards = document.querySelectorAll('.skill-card');
+
+    skillCards.forEach(card => {
+        // 滑鼠進入事件：顯示提示框
+        card.addEventListener('mouseover', function () {
+            // 在卡片上添加 'active' class，CSS 會根據這個 class 顯示 Tooltip
+            this.classList.add('active');
+        });
+
+        // 滑鼠離開事件：隱藏提示框
+        card.addEventListener('mouseout', function () {
+            // 移除 'active' class
+            this.classList.remove('active');
+        });
+    });
+}
+
+
 
 // --- 函數 4：處理 URL Hash 變化 (路由處理) ---
 function handleHashChange() {
@@ -93,7 +152,7 @@ async function initApp() {
 
     // 1. 數據載入步驟
     try {
-        const response = await fetch('jobs.json');
+        const response = await fetch('./data/jobs.json');
 
         if (!response.ok) {
             throw new Error(`HTTP 錯誤! 狀態碼: ${response.status}。`);
@@ -115,9 +174,9 @@ async function initApp() {
     } catch (error) {
         console.error('載入或解析 JSON 失敗:', error);
         document.getElementById('main-content').innerHTML = `
-            <h2>資料載入錯誤</h2>
-            <p>無法載入職業技能資料。請確認檔案 **'data/jobs.json'** 存在且格式正確。詳情請查看控制台 (Console)。</p>
-        `;
+    < h2 > 資料載入錯誤</h2 >
+        <p>無法載入職業技能資料。請確認檔案 **'data/jobs.json'** 存在且格式正確。詳情請查看控制台 (Console)。</p>
+`;
     }
 }
 

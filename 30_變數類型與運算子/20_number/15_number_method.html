@@ -8,15 +8,27 @@
 <body>
 
     <h4>JavaScript Number Methods</h4>
-    <p><a href="https://www.w3schools.com/js/js_number_methods.asp">https://www.w3schools.com/js/js_number_methods.asp</a></p>
+    <p><a
+            href="https://www.w3schools.com/js/js_number_methods.asp">https://www.w3schools.com/js/js_number_methods.asp</a>
+    </p>
 
     <script>
- 
+
         // 20. 數值運算常見的錯誤
         // NaN、Infinity、-Infinity
+        let x = 7;
+        let y = "x";
+        let z = 0;
+        console.log(x / y); //NAN通常是運算到非數字
+        console.log(x / z); //Infinity通常是運算到0
+        console.log(-1 / z); //-Infinity通常是運算到-0
 
-        
-        // 30. 數值轉字串的方法 toString()
+        // 30. 數值轉字串的方法 toString(n) ==>n進位，預設為10進位
+        let num = 123;
+        // let floatnum = ;
+        console.log(num.toString());
+        console.log((0.1 * 10 + 0.2 * 10) / 10);
+
 
     </script>
 

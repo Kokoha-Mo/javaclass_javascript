@@ -8,25 +8,46 @@
 <body>
 
     <h4>JavaScript Array Methods</h4>
-    <p><a href="http://www.w3schools.com/js/js_array_methods.asp">http://www.w3schools.com/js/js_array_methods.asp</a></p>
+    <p><a href="http://www.w3schools.com/js/js_array_methods.asp">http://www.w3schools.com/js/js_array_methods.asp</a>
+    </p>
 
     <script>
         var weekList = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
         // 10. 陣列的取值和長度
+        console.log(weekList[1]);
+        console.log(weekList.length);
 
-        
 
         // 12. 陣列.toString()
+        console.log(weekList.toString());
 
         // 13. 陣列.join("#")
-        
+        console.log(weekList.join(" & "));
+
         // 14. 移除陣列中第一份資料
+        let whatShift = weekList.shift();
+        console.log(whatShift);
+        console.log(weekList);
+
 
         // 15. 移除陣列中最後一份資料
+        let whatPop = weekList.pop();
+        console.log(whatPop);
+        console.log(weekList);
+
+
 
         // 16. 有哪三種方式可以加入資料到陣列中?
-
+        // sol.1
+        weekList.push("sunday"); //push == unpop 
+        console.log(weekList);
+        // sol.2
+        weekList.unshift("saturday");
+        console.log(weekList);
+        // sol.3
+        weekList.splice(7, 0, "unday"); //(從第幾個替換，替換幾個，用甚麼替換)
+        console.log(weekList);
 
 
         // 20. 二維陣列的長度

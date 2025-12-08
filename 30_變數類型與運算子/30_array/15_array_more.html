@@ -6,18 +6,23 @@
 </head>
 
 <body>
+    <pre>
+        by value 傳值
+        by reference 傳址
+    </pre>
     <script>
-        
+
         // 10. 宣告一個陣列 apple ， 存放 1,2,3,4,5,6
-
+        var apple = [1, 2, 3, 4, 5, 6];
         // 20. 宣告另外一個陣列 bee ， 讓 bee = apple
-
+        var bee = apple; // by reference,因為陣列是物件(地址)
         // 30. 取得 bee 第一個位置的值
-
+        console.log(bee[0]);
         // 40. 修改 bee 第一個位置的值
-
+        bee[0] = 10;
         // 50. 將 apple 列印出來查看
-        
+        console.log(bee);
+        console.log(apple);
     </script>
 </body>
 

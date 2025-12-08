@@ -15,18 +15,37 @@
     <p>陣列就像置物櫃一樣，透過index，可以存放物品，可以取出</p>
 
     <script>
-            
-        // 10. 什麼時候我們需要一個陣列？
-       
-        // 20. 該怎麼樣宣告一個陣列？
-       
-        // 25. 該怎麼把東西放進去？
 
+        // 10. 什麼時候我們需要一個陣列？
+        let s1 = "皮卡丘";
+        let s2 = "妙蛙花";
+        let s3 = "傑尼龜";
+        let s4 = "大比基";
+        let s5 = "超夢";
+        let s6 = "夢幻";
+        let s7 = "蓋歐卡";
+        let s8 = "固拉多";
+        console.log(s1);
+        console.log(s2);
+        console.log(s3);
+        console.log(s4);
+        // 20. 該怎麼樣宣告一個陣列？
+        let pokemon = [];
+        pokemon[0] = [s1, s2, s3, s4];
+        console.log(pokemon[0]);
+        // 25. 該怎麼把東西放進去？
+        pokemon[0].push(s5);
+        console.log(pokemon[0]);
         // 30. 陣列中的陣列
-      
+        pokemon[1] = [s6, s7, s8];
+        console.log(pokemon[1]);
+        pokemon[0].push(pokemon[1]);
+        console.log(pokemon[0]);
+        // console.log(pokemon);
         // 40. 如果要取得 poker陣列 裡面的13，要如何取得?
         var poker = [];
         poker[0] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+        console.log(poker[0][12]);
 
     </script>
 </body>
