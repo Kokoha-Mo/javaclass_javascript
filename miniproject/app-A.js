@@ -13,7 +13,7 @@ function renderSkillCard(skill) {
             <div class="skill-details">
                 <p><strong>等級要求:</strong> ${skill.level}</p>
                 <p><strong>類型:</strong> <span class="skill-type type-${skill.type}">${skill.type}</span></p>
-                <p><strong>威力 (Potency):</strong> ${skill.potency > 0 ? skill.potency : '—'}</p>
+                <p><strong>威力:</strong> ${skill.potency > 0 ? skill.potency : '—'}</p>
                 <p class="effect-desc">${skill.effect_tw}</p>
             </div>
         </div>

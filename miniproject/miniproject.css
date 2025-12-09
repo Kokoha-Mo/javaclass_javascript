@@ -16,6 +16,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    height: 300vh;
     background-color: var(--bg-dark);
     /* 使用深藍黑背景 */
     color: var(--text-color);
@@ -190,11 +191,15 @@ body {
     font-size: 0.9em;
 }
 
-.effect-desc {
+.effect-desc,
+.skill-additional-effect p,
+.skill-combo {
     color: #c9c9c9;
     margin-top: 10px !important;
     font-style: italic;
 }
+
+
 
 /* 技能類型顏色高亮 (可自行擴充) */
 .skill-type {
@@ -214,3 +219,11 @@ body {
 }
 
 /* 綠色 */
+
+.type-魔法 {
+    background-color: #6aa3ee;
+}
+
+.notice {
+    color: #f9ffa4;
+}

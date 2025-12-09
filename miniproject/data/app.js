@@ -9,14 +9,12 @@ function renderSkillCard(skill) {
     // 連擊區塊的 HTML，只有在有連擊資訊時才生成
     const comboHTML = hasCombo ? `
         <div class="skill-combo">
-            <h5>連擊資訊</h5>
-            <p>
-                <strong>連擊條件:</strong> ${skill.combo_req || '—'}
-            </p>
-            <p>
-                <strong>連擊威力:</strong> ${skill.combopotency > 0 ? skill.combopotency : '—'}
-            </p>
-            ${skill.comboeffect_tw ? `<p><strong>連擊成功:</strong> ${skill.comboeffect_tw}</p>` : ''}
+        <h5>連擊資訊</h5>
+            <p><strong>連擊條件:</strong> ${skill.combo_req || '—'}</p>
+            ${skill.combopotency ? `<p><strong>連擊威力:</strong> ${skill.combopotency || '—'}</p>` : ''}
+            ${skill.combo_duration ? `<p><strong>持續時間:</strong> ${skill.combo_duration || '—'}</p>` : ''}
+            ${skill.comboeffect_tw ? `<p><strong>連擊成功:</strong> ${skill.comboeffect_tw || '—'}</p>` : ''}
+            ${skill.comboeffect2_tw ? `<p><strong>連擊成功:</strong> ${skill.comboeffect2_tw || '—'}</p>` : ''}
         </div>
     ` : ''; // 如果沒有連擊資訊，則為空字串
 
@@ -25,6 +23,12 @@ function renderSkillCard(skill) {
         <div class="skill-additional-effect">
             <p><strong>追加效果:</strong> ${skill.additional_effect_tw}</p>
             ${skill.add_effect_duration ? `<p><strong>持續時間:</strong> ${skill.add_effect_duration}</p>` : ''}
+            ${skill.additional_effect2_tw ? `<p><strong>追加效果:</strong> ${skill.additional_effect2_tw}</p>` : ''}
+            ${skill.add_effect2_duration ? `<p><strong>持續時間:</strong> ${skill.add_effect2_duration}</p>` : ''}
+            ${skill.additional_effect3_tw ? `<p><strong>追加效果:</strong> ${skill.additional_effect3_tw}</p>` : ''}
+            ${skill.add_effect3_duration ? `<p><strong>持續時間:</strong> ${skill.add_effect3_duration}</p>` : ''}
+            ${skill.additional_effect4_tw ? `<p><strong>追加效果:</strong> ${skill.additional_effect4_tw}</p>` : ''}
+            ${skill.add_effect4_duration ? `<p><strong>持續時間:</strong> ${skill.add_effect4_duration}</p>` : ''}
         </div>
     `: '';
 
@@ -33,23 +37,27 @@ function renderSkillCard(skill) {
         <div class="skill-card" data-skill-id="${skill.id}">
             <div class="skill-header">
                 <img src="${skill.icon_url || 'default_icon.png'}" alt="${skill.name_tw}" class="skill-icon">
-                <h4>${skill.name_tw}</h4>
+                <h4>${skill.name_tw}<br> <p><span class="skill-type type-${skill.type}">${skill.type}</span></p></h4>
             </div>
             
             <div class="skill-tooltip">
                 <div class="skill-stats">
                     <p><strong>習得等級:</strong> ${skill.level}等</p>
-                    <p><strong>類型:</strong> <span class="skill-type type-${skill.type}">${skill.type}</span></p>
+                   
                     <p><strong>距離:</strong> ${skill.range || '0米'}</p>
                     <p><strong>範圍:</strong> ${skill.area || '0米'}</p>
                     <p><strong>詠唱時間:</strong> ${skill.cast_time || '即時'}</p>
-                    <p><strong>復唱時間:</strong> ${skill.cooldown || '—'}</p>
-                    ${skill.potency ? `<p><strong>威力 (Potency):</strong> ${skill.potency || '—'}</p>` : ''}
+                    <p><strong>冷卻時間:</strong> ${skill.cooldown || '—'}</p>
+                    ${skill.cost ? `<p><strong>消耗:</strong> ${skill.cost || '—'}</p>` : ''}
+                    ${skill.potency ? `<p><strong>威力:</strong> ${skill.potency || '—'}</p>` : ''}
                     ${skill.duration ? `<p><strong>持續時間:</strong> ${skill.duration || '—'}</p > ` : ''}
+                    ${skill.charge ? `<p><strong>積蓄次數:</strong> ${skill.charge || '—'}</p>` : ''}
                     ${skill.cast_req ? `<p><strong>發動條件:</strong> ${skill.cast_req || '—'}</p >` : ''}
-                    ${comboHTML}
-                    ${addEffectHTML}
+                    <hr>
                     <p class="effect-desc">${skill.effect_tw}</p>
+                    ${addEffectHTML}
+                    ${skill.notice ? `<p class="notice"> ${skill.notice || '—'}</p>` : ''}
+                    ${comboHTML}
                 </div >
             </div >
         </div >
@@ -57,6 +65,8 @@ function renderSkillCard(skill) {
 }
 
 
+
+// --- 函數 2：根據職業數據渲染主內容頁面 (已修改) ---
 // --- 函數 2：根據職業數據渲染主內容頁面 ---
 function renderJobPage(jobKey) {
     const job = allJobData[jobKey];
@@ -83,14 +93,16 @@ function renderJobPage(jobKey) {
 
     // 3. (可選) 高亮當前選擇的導航項目
     document.querySelectorAll('#job-list a').forEach(a => {
-        if (a.getAttribute('href') === `#${jobKey} `) {
+        if (a.getAttribute('href') === `#${jobKey}`) {
             a.classList.add('active-job');
         } else {
             a.classList.remove('active-job');
         }
     });
+    // 5. 附加懸停監聽器
     attachTooltipListeners();
 }
+
 
 
 // --- 函數 3：動態更新側邊欄導航 ---
@@ -111,25 +123,68 @@ function updateSidebarNav(data) {
 }
 
 
+
+let hideTimeout;
+const HIDE_DELAY = 100; // 延遲 100 毫秒才隱藏
+
 function attachTooltipListeners() {
-    // 選取所有技能卡片
     const skillCards = document.querySelectorAll('.skill-card');
+    const TOOLTIP_WIDTH = 300; // 必須與 CSS 寬度匹配
 
     skillCards.forEach(card => {
-        // 滑鼠進入事件：顯示提示框
+        // -------------------------
+        // 1. 滑鼠進入 (mouseover)
+        // -------------------------
         card.addEventListener('mouseover', function () {
-            // 在卡片上添加 'active' class，CSS 會根據這個 class 顯示 Tooltip
+            // 清除任何待處理的隱藏延遲，防止閃爍
+            clearTimeout(hideTimeout);
+
+            // --- 自動判斷定位邏輯 (維持不變) ---
+            const rect = this.getBoundingClientRect();
+            if (rect.right + TOOLTIP_WIDTH > window.innerWidth) {
+                this.classList.add('left-side');
+            } else {
+                this.classList.remove('left-side');
+            }
+            // --- 自動判斷定位邏輯 (結束) ---
+
+            // 顯示提示框
             this.classList.add('active');
         });
 
-        // 滑鼠離開事件：隱藏提示框
+        // -------------------------
+        // 2. 滑鼠離開 (mouseout)
+        // -------------------------
         card.addEventListener('mouseout', function () {
-            // 移除 'active' class
-            this.classList.remove('active');
+            // 設置延遲隱藏：給予滑鼠短暫的時間移出 Tooltip 區域或移回卡片本身
+            hideTimeout = setTimeout(() => {
+                this.classList.remove('active');
+                this.classList.remove('left-side');
+            }, HIDE_DELAY);
         });
+
+        // -------------------------
+        // 3. 處理 Tooltip 本身 (防止離開 Tooltip 時閃爍)
+        // -------------------------
+        const tooltip = card.querySelector('.skill-tooltip');
+
+        // 確保滑鼠進入 Tooltip 區域時，不要觸發隱藏
+        if (tooltip) {
+            tooltip.addEventListener('mouseover', function () {
+                // 如果滑鼠指標進入 Tooltip，則取消隱藏延遲
+                clearTimeout(hideTimeout);
+            });
+
+            tooltip.addEventListener('mouseout', function () {
+                // 如果滑鼠指標離開 Tooltip，則重新啟動隱藏延遲
+                hideTimeout = setTimeout(() => {
+                    card.classList.remove('active');
+                    card.classList.remove('left-side');
+                }, HIDE_DELAY);
+            });
+        }
     });
 }
-
 
 
 // --- 函數 4：處理 URL Hash 變化 (路由處理) ---
