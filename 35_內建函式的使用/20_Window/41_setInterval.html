@@ -6,9 +6,11 @@
 </head>
 
 <body>
-    
+
     <h4>指定的秒數，做指定的事情</h4>
-    <p><a href="https://www.w3schools.com/jsref/met_win_setinterval.asp">https://www.w3schools.com/jsref/met_win_setinterval.asp</a></p>
+    <p><a
+            href="https://www.w3schools.com/jsref/met_win_setinterval.asp">https://www.w3schools.com/jsref/met_win_setinterval.asp</a>
+    </p>
 
     <script>
         var cnt = 0;
@@ -19,13 +21,22 @@
         }
 
         // 10. 放入  apple
-        
+        // setInterval(apple, 1000);
         // 20. 放入 'apple()'
-        
+        // setInterval('apple()', 2000);
         // 30. 放入  apple()
-        
+        // setInterval(apple(), 3000); //fail
+        //EX:
+        console.log(parseInt('123'));
+        //內到外
+        console.log(alert('123'));
+        //執行後就無視
+
         // 40. 呼叫 setInterval 時改為直接放入 function 
-        
+        setInterval(function () {
+            console.log('又是你');
+            console.log('不是我');
+        }, 2000);
 
     </script>
 </body>

@@ -66,7 +66,6 @@ function renderSkillCard(skill) {
 
 
 
-// --- 函數 2：根據職業數據渲染主內容頁面 (已修改) ---
 // --- 函數 2：根據職業數據渲染主內容頁面 ---
 function renderJobPage(jobKey) {
     const job = allJobData[jobKey];

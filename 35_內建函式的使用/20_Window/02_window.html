@@ -11,13 +11,23 @@
     <p><a href="https://www.w3schools.com/jsref/obj_window.asp">https://www.w3schools.com/jsref/obj_window.asp</a></p>
 
     <script>
-        
+
         // 10. 測試 window.alert("Hi");  和  
         //                 alert("HiHi"); 
+
+        // viod:沒有回傳值
+
         //     是否有不同？
+        // window.alert("Hi");
+        // alert("HiHi");
 
         // 20. 測試 window.confirm();
-
+        let result = window.confirm("Are you sure?");
+        if (result) {
+            alert("true");
+        } else {
+            alert("false");
+        }
     </script>
 
 </body>

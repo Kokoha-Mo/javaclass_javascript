@@ -7,13 +7,32 @@
 
 <body>
 
-    <button>接收輸入，並顯示結果</button>
+    <button onclick="PromptFunctionName()">輸入姓名</button>
+    <button onclick="PromptFunctionSum()">輸入兩個數字</button>
+    <button onclick="PromptFunctionSum2()">輸入兩個數字</button>
 
     <script>
-        
-        // 10. 透過 prompt 接收使用者輸入的值，並記錄下來
 
-        // 20. 將記錄到的資訊 alert 出來
+        function PromptFunctionName() {
+            // 10. 透過 prompt 接收使用者輸入的值，並記錄下來
+            let name = prompt("請輸入您的名字");
+            // 20. 將記錄到的資訊 alert 出來
+            alert("Hello " + name);
+        }
+        //
+        function PromptFunctionSum() {
+            let num1 = prompt("請輸入第一個數字");
+            let num2 = prompt("請輸入第二個數字");
+            // alert("總和為: " + (num1 + num2)); 注意類型
+            alert("總和為: " + (Number(num1) + Number(num2)));
+        }
+        //
+        function PromptFunctionSum2() {
+            // let num1 = prompt("請輸入第一個數字");
+            // let num2 = prompt("請輸入第二個數字");
+            // alert("總和為: " + (num1 + num2)); 注意類型
+            alert("總和為: " + (Number(prompt("請輸入第一個數字")) + Number(prompt("請輸入第二個數字"))));
+        }
 
     </script>
 

@@ -17,9 +17,10 @@
         var b = 3;
 
         // 10. 取餘數 %
-
+        console.log(a % b);
         // 11. ++變數  和  變數++ 
-
+        console.log(a++); // a++會console不到後面的++，但a的值會增加
+        console.log(++b); // ++b會console到前面的++，b的值也會增加
 
 
         // 比較運算子：評估條件，回傳 true 或者 false 值
@@ -28,21 +29,55 @@
         var z = 5;
 
         // 20. == 和 === 的差異在?
+        console.log("x == y", x == y); //比值
+        console.log("x === y", x === y); //比類型
 
         // 21. 測試 2 > 1
+        console.log("2 > 1", 2 > 1);
 
         // 22. 測試 1 < 2 < 3 和 3 > 2 > 1
+        console.log("1 < 2 < 3", 1 < 2 < 3); //(1<2)<3 ==> true<3 ==> 1<3 ==> true
+        console.log("3 > 2 > 1", 3 > 2 > 1); //(3>2)>1 ==> true>1 ==> 1>1 ==> false
 
         // 23. 測試 true == 1 還有 false == 0 
+        console.log("true == 1", true == 1);
+        console.log("false == 0", false == 0);
 
-        
 
         // 邏輯運算子
         // 30. 不等於的寫法 (!=)
-
+        let m = 5 != 3
+        console.log("m", m);
+        console.log("m = 5 != 3", m = 5 != 3);
         // 40. and (&&) 條件需要同時成立的時候
+        let f = 10
+        let g = 20
+        if (f == 10 && g == 20) {
+            console.log("f == 10 && g == 20 ==> true",);
+        }
+        else {
+            console.log("f == 10 && g == 20 ==> false",);
+        };
 
-        // 50. or (||) 條件擇一成立
+
+        // 50. or (||) 條件只需要其中一個成立的時候
+        let h = 10
+        let i = 20
+        if (h == 10 || i == 30) {
+            console.log("h == 10 || i == 30 ==> true",);
+        }
+        else {
+            console.log("h == 10 || i == 30 ==> false",);
+        }
+
+        // 60. not (!) 條件需要其中一個成立的時候
+        let j = 10
+        if (!j == 10) {
+            console.log("j = 10 ==> false",);
+        }
+        else {
+            console.log("j = 10 ==> true",);
+        }
 
 
         // 70. 三元運算子 (condition) ? value1:value2

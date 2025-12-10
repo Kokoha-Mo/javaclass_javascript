@@ -2,7 +2,7 @@
     "Paladin": {
         "name_tw": "騎士",
         "role_tw": "坦克",
-        "description_tw": "以單手劍和盾作為武器的戰鬥精英特職，是以吸引敵方仇恨，保護隊友為責的防護職業。",
+        "description_tw": "以單手劍和盾作為武器的戰鬥精英特職，是以吸引敵方仇恨，保護隊友為責的防護職業",
         "skills": [
             {
                 "id": "pld1",
@@ -17,7 +17,7 @@
                 "combo_req": "",
                 "combopotency": null,
                 "comboeffect_tw": "",
-                "effect_tw": "對目標發動物理攻擊。",
+                "effect_tw": "對目標發動物理攻擊",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "duration": null,
@@ -37,7 +37,7 @@
                 "combo_req": null,
                 "combopotency": null,
                 "comboeffect_tw": null,
-                "effect_tw": "一定時間內，自身發動攻擊的傷害提高25%。",
+                "effect_tw": "一定時間內，自身發動攻擊的傷害提高25%",
                 "additional_effect_tw": "瀝血劍預備",
                 "add_effect_duration": "30秒",
                 "duration": "20秒",
@@ -57,7 +57,7 @@
                 "combo_req": "先鋒劍",
                 "combopotency": 330,
                 "comboeffect_tw": "恢復自身魔力",
-                "effect_tw": "對目標發動物理攻擊。",
+                "effect_tw": "對目標發動物理攻擊",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "duration": null,
@@ -77,7 +77,7 @@
                 "combo_req": null,
                 "combopotency": null,
                 "comboeffect_tw": null,
-                "effect_tw": "對自身周圍的敵人發動物理攻擊。",
+                "effect_tw": "對自身周圍的敵人發動物理攻擊",
                 "additional_effect_tw": "提升仇恨",
                 "add_effect_duration": null,
                 "duration": null,
@@ -97,7 +97,7 @@
                 "combo_req": null,
                 "combopotency": null,
                 "comboeffect_tw": null,
-                "effect_tw": "對目標發動物理攻擊。",
+                "effect_tw": "對目標發動物理攻擊",
                 "additional_effect_tw": "暈眩",
                 "add_effect_duration": "6秒",
                 "duration": null,
@@ -135,7 +135,7 @@
                 "combo_req": null,
                 "combopotency": null,
                 "comboeffect_tw": null,
-                "effect_tw": "對目標發動遠距離物理攻擊。",
+                "effect_tw": "對目標發動遠距離物理攻擊",
                 "additional_effect_tw": "提升仇恨",
                 "add_effect_duration": null,
                 "duration": null,
@@ -155,7 +155,7 @@
                 "combo_req": "暴亂劍",
                 "combopotency": 330,
                 "comboeffect_tw": null,
-                "effect_tw": "對目標發動物理攻擊。",
+                "effect_tw": "對目標發動物理攻擊",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "duration": null,
@@ -175,7 +175,7 @@
                 "combo_req": null,
                 "combopotency": null,
                 "comboeffect_tw": null,
-                "effect_tw": "一定時間內，將自身所受的傷害減輕30%。",
+                "effect_tw": "一定時間內，將自身所受的傷害減輕30%",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "duration": "15秒",
@@ -195,7 +195,7 @@
                 "combo_req": null,
                 "combopotency": null,
                 "comboeffect_tw": null,
-                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊。",
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊",
                 "additional_effect_tw": "持續傷害\n威力:30",
                 "add_effect_duration": "15秒",
                 "duration": null,
@@ -215,7 +215,7 @@
                 "combo_req": null,
                 "combopotency": null,
                 "comboeffect_tw": null,
-                "effect_tw": "對目標發動物理攻擊。",
+                "effect_tw": "對目標發動物理攻擊",
                 "additional_effect_tw": "恢復自身魔力",
                 "add_effect_duration": null,
                 "duration": null,
@@ -235,7 +235,7 @@
                 "combo_req": null,
                 "combopotency": null,
                 "comboeffect_tw": null,
-                "effect_tw": "一定時間內，將自身所受的傷害減輕15%。",
+                "effect_tw": "一定時間內，將自身所受的傷害減輕15%",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "duration": "6秒",
@@ -256,7 +256,7 @@
                 "combopotency": 220,
                 "comboeffect_tw": "恢復自身魔力",
                 "comboeffect2_tw": "神聖魔法效果提高<br>下次發動聖靈或聖環不需要詠唱時間，同時威力提高",
-                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊。",
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊",
                 "additional_effect_tw": "提升仇恨",
                 "duration": null,
                 "cast_req": null,
@@ -335,7 +335,7 @@
                 "combo_req": null,
                 "combopotency": null,
                 "comboeffect_tw": null,
-                "effect_tw": "對目標發動物理攻擊。",
+                "effect_tw": "對目標發動物理攻擊",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "duration": null,
@@ -398,7 +398,7 @@
                 "combo_duration": "30秒",
                 "comboeffect_tw": "贖罪劍預備",
                 "comboeffect2_tw": "神聖魔法效果提高:下次發動聖靈或聖環不需要詠唱時間，同時威力提高",
-                "effect_tw": "對目標發動物理攻擊。",
+                "effect_tw": "對目標發動物理攻擊",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "duration": null,
@@ -488,7 +488,7 @@
                 "combo_duration": null,
                 "comboeffect_tw": null,
                 "duration": null,
-                "effect_tw": "對目標發動無屬性魔法攻擊。",
+                "effect_tw": "對目標發動無屬性魔法攻擊",
                 "additional_effect_tw": "為自身附加4檔安魂祈禱狀態:詠唱魔法不需要詠唱時間，同時聖靈、聖環、悔罪及其後連擊技能威力提高",
                 "add_effect_duration": "30秒",
                 "additional_effect2_tw": "悔罪預備",
@@ -601,7 +601,7 @@
                 "combo_duration": null,
                 "comboeffect_tw": null,
                 "duration": "8秒",
-                "effect_tw": "一定時間內，將自身所受的傷害減輕15%。",
+                "effect_tw": "一定時間內，將自身所受的傷害減輕15%",
                 "additional_effect_tw": "騎士的堅守:令目標受到的傷害減輕15%",
                 "add_effect_duration": "4秒",
                 "additional_effect2_tw": "騎士的加護:令目標體力持續恢復\n恢復力:250",
@@ -647,8 +647,8 @@
                 "combo_duration": null,
                 "comboeffect_tw": null,
                 "duration": "15秒",
-                "effect_tw": "一定時間內，將自身所受的傷害減輕40%。",
-                "additional_effect_tw": "為自身附加能夠抵禦一定傷害的防護罩，該防護罩能夠抵銷相當於恢復力1000的傷害量。",
+                "effect_tw": "一定時間內，將自身所受的傷害減輕40%",
+                "additional_effect_tw": "為自身附加能夠抵禦一定傷害的防護罩，該防護罩能夠抵銷相當於恢復力1000的傷害量",
                 "add_effect_duration": "15秒",
                 "cast_req": null,
                 "icon_url": "./icons/PLD/極致防禦.png"
@@ -905,7 +905,7 @@
                 "combo_duration": null,
                 "comboeffect_tw": null,
                 "duration": null,
-                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊。",
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊",
                 "additional_effect_tw": "提升仇恨",
                 "add_effect_duration": null,
                 "cast_req": null,
@@ -949,7 +949,7 @@
                 "combo_duration": null,
                 "comboeffect_tw": null,
                 "duration": null,
-                "effect_tw": "對目標發動遠距離物理攻擊。",
+                "effect_tw": "對目標發動遠距離物理攻擊",
                 "additional_effect_tw": "提升仇恨",
                 "add_effect_duration": null,
                 "cast_req": null,
@@ -972,7 +972,7 @@
                 "comboeffect_tw": "恢復自身體力\n恢復力:250",
                 "comboeffect2_tw": "獲得20點獸魂",
                 "duration": null,
-                "effect_tw": "對目標發動物理攻擊。",
+                "effect_tw": "對目標發動物理攻擊",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "cast_req": null,
@@ -1061,7 +1061,7 @@
                 "comboeffect_tw": "戰場風暴<br>自身發動攻擊遭成的傷害提高10%<br>若自身已經附加戰場風暴狀態，則持續時間延長30秒<br>最多可延長至60秒",
                 "comboeffect2_tw": "獲得10點獸魂",
                 "duration": null,
-                "effect_tw": "對目標發動物理攻擊。",
+                "effect_tw": "對目標發動物理攻擊",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "cast_req": null,
@@ -1083,7 +1083,7 @@
                 "combo_duration": null,
                 "comboeffect_tw": null,
                 "duration": null,
-                "effect_tw": "對目標發動物理攻擊。",
+                "effect_tw": "對目標發動物理攻擊",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "cast_req": "獸魂50點",
@@ -1106,7 +1106,7 @@
                 "comboeffect_tw": "戰場風暴<br>自身發動攻擊遭成的傷害提高10%<br>若自身已經附加戰場風暴狀態，則持續時間延長30秒<br>最多可延長至60秒",
                 "comboeffect2_tw": "獲得20點獸魂",
                 "duration": "30秒",
-                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊。",
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊",
                 "additional_effect_tw": "提升仇恨",
                 "add_effect_duration": null,
                 "cast_req": null,
@@ -1128,7 +1128,7 @@
                 "combo_duration": null,
                 "comboeffect_tw": null,
                 "duration": null,
-                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊。",
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "cast_req": "獸魂50點",
@@ -1173,7 +1173,7 @@
                 "combo_duration": null,
                 "comboeffect_tw": null,
                 "duration": null,
-                "effect_tw": "對目標發動物理攻擊。<br>該技能在原初的混沌狀態中，且獸魂在50點以上時變為狂魂",
+                "effect_tw": "對目標發動物理攻擊<br>該技能在原初的混沌狀態中，且獸魂在50點以上時變為狂魂",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "cast_req": "獸魂50點",
@@ -1239,7 +1239,7 @@
                 "combo_duration": null,
                 "comboeffect_tw": null,
                 "duration": null,
-                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊。<br>該技能在原初的混沌狀態中，且獸魂在50點以上時變為混沌旋風",
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊<br>該技能在原初的混沌狀態中，且獸魂在50點以上時變為混沌旋風",
                 "additional_effect_tw": null,
                 "add_effect_duration": null,
                 "cast_req": "獸魂50點",
@@ -1406,53 +1406,501 @@
                 "potency": 55,
                 "effect_tw": "一定時間內，將自身所受的傷害減輕40%，同時受到物理攻擊時會給予對方反擊傷害",
                 "duration": "15秒",
-                "additional_effect_tw": null,
-                "cast_req": "發動原初的解放後為自身附加的蠻荒崩裂預備狀態中<br>止步狀態下無法發動",
-                "icon_url": "./icons/WAR/蠻荒崩裂.png"
+                "additional_effect_tw": "受到攻擊或持續傷害時間結束後，為自身附加討罪狀態<br>討罪效果:持續恢復自身體力\n恢復力:300",
+                "additional_effect_duration": "15秒",
+                "cast_req": null,
+                "icon_url": "./icons/WAR/戮罪.png"
+            },
+            {
+                "id": "war29",
+                "name_tw": "混沌旋風",
+                "level": 72,
+                "type": "戰技",
+                "cooldown": "2.50秒",
+                "potency": 200,
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊<br>該技能必定暴擊並且直擊<br>受暴擊或直擊發動率提高效果影響時，攻擊造成的傷害提高",
+                "additional_effect_tw": "戰嚎的冷卻時間縮短5秒<br>發動後會取消原初的混沌狀態",
+                "cast_req": "原初的混沌狀態中且獸魂50點",
+                "notice": "該技能無法設置到快捷欄<br>滿足發動條件後，地毀人亡變為混沌旋風",
+                "icon_url": "./icons/WAR/混沌旋風.png"
+            },
+            {
+                "id": "war30",
+                "name_tw": "狂魂",
+                "level": 80,
+                "type": "戰技",
+                "cooldown": "2.50秒",
+                "potency": 660,
+                "effect_tw": "對目標發動物理攻擊<br>該技能必定暴擊並且直擊<br>受暴擊或直擊發動率提高效果影響時，攻擊造成的傷害提高",
+                "additional_effect_tw": "戰嚎的冷卻時間縮短5秒<br>發動後會取消原初的混沌狀態",
+                "cast_req": "原初的混沌狀態中且獸魂50點",
+                "notice": "該技能無法設置到快捷欄<br>滿足發動條件後，地毀人亡變為混沌旋風",
+                "icon_url": "./icons/WAR/狂魂.png"
+            },
+            {
+                "id": "war30",
+                "name_tw": "原初的怒震",
+                "level": 96,
+                "type": "能力",
+                "cooldown": "1秒",
+                "potency": 700,
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊<br>攻擊複數敵人時，對目標之外的敵人威力降低50%",
+                "cast_req": "原初的怒震預備狀態中",
+                "notice": "該技能無法設置到快捷欄<br>滿足發動條件後，地毀人亡變為混沌旋風",
+                "icon_url": "./icons/WAR/原初的怒震.png"
+            },
+            {
+                "id": "war31",
+                "name_tw": "盡毀",
+                "level": 100,
+                "type": "戰技",
+                "cooldown": "2.50秒",
+                "potency": 780,
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊<br>攻擊複數敵人時，對目標之外的敵人威力降低50%<br>該技能必定暴擊並且直擊<br>受暴擊或直擊發動率提高效果影響時，攻擊造成的傷害提高",
+                "cast_req": "盡毀預備狀態中",
+                "notice": "該技能無法設置到快捷欄<br>滿足發動條件後，地毀人亡變為混沌旋風",
+                "icon_url": "./icons/WAR/盡毀.png"
             }
         ]
     },
     "DarkKnight": {
         "name_tw": "暗黑騎士",
         "role_tw": "坦克",
-        "description_tw": "專注於暗影魔法的防禦者，犧牲自身生命值來為隊伍承受傷害，是隊伍的主力堅盾。",
+        "description_tw": "以雙手大劍作為武器，是以吸引敵方仇恨，保護隊伍為責的防護職業<br>相較於其他防護職業，暗黑騎士擅長減輕自己受到的魔法攻擊，以及通過護盾技能大幅度減輕自身獲隊友承受的傷害",
         "skills": [
             {
                 "id": "drk1",
-                "name_tw": "吸血劍",
-                "level": 30,
+                "name_tw": "重斬",
+                "level": 1,
                 "type": "戰技",
-                "cooldown": 2.5,
-                "potency": 200,
-                "effect_tw": "對目標造成單體傷害，並恢復自身傷害值一部分的HP。",
-                "icon_url": "icons/drk/drk_souleater.png"
+                "range": "3米",
+                "cooldown": "2.50秒",
+                "potency": 300,
+                "effect_tw": "對目標發動物理攻擊",
+                "icon_url": "./icons/DRK/重斬.png"
             },
             {
                 "id": "drk2",
-                "name_tw": "至黑之夜",
-                "level": 70,
-                "type": "能力",
-                "cooldown": 60,
-                "potency": 0,
-                "effect_tw": "對自身或隊友施加一個能吸收傷害的護盾，如果護盾未被擊破，則返還消耗的魔力。",
-                "icon_url": "icons/drk/drk_blackestnight.png"
+                "name_tw": "吸收斬",
+                "level": 2,
+                "type": "戰技",
+                "range": "3米",
+                "cooldown": "2.50秒",
+                "potency": 240,
+                "effect_tw": "對目標發動物理攻擊",
+                "combo_req": "重斬",
+                "combopotency": "380",
+                "comboeffect_tw": "恢復自身魔力",
+                "icon_url": "./icons/DRK/吸收斬.png"
             },
             {
                 "id": "drk3",
+                "name_tw": "釋放",
+                "level": 6,
+                "type": "戰技",
+                "area": "5米",
+                "cooldown": "2.50秒",
+                "potency": 120,
+                "effect_tw": "對自身周圍的敵人發動無屬性範圍魔法攻擊",
+                "additional_effect_tw": "提升仇恨",
+                "icon_url": "./icons/DRK/釋放.png"
+            },
+            {
+                "id": "drk4",
+                "name_tw": "深惡痛絕",
+                "level": 10,
+                "type": "能力",
+                "cooldown": "2秒",
+                "duration": "永久",
+                "effect_tw": "極大幅度增加戰鬥時獲得的仇恨量<br>再次發動時則取消該狀態",
+                "icon_url": "./icons/DRK/深惡痛絕.png"
+            },
+            {
+                "id": "drk5",
+                "name_tw": "傷殘",
+                "level": 10,
+                "type": "魔法",
+                "range": "20米",
+                "cooldown": "2.50秒",
+                "potency": 150,
+                "effect_tw": "對目標發動無屬性魔法攻擊",
+                "additional_effect_tw": "提升仇恨",
+                "additional_effect2_tw": "暗影步的冷卻時間縮短5秒",
+                "icon_url": "./icons/DRK/傷殘.png"
+            },
+            {
+                "id": "drk6",
+                "name_tw": "噬魂斬",
+                "level": 26,
+                "type": "戰技",
+                "range": "3米",
+                "cooldown": "2.50秒",
+                "potency": 260,
+                "combo_req": "吸收斬",
+                "combopotency": "480",
+                "comboeffect_tw": "恢復自身體力\n恢復力:300",
+                "comboeffect2_tw": "獲得20點暗血",
+                "effect_tw": "對目標發動物理攻擊",
+                "icon_url": "./icons/DRK/噬魂斬.png"
+            },
+            {
+                "id": "drk7",
+                "name_tw": "暗黑波動",
+                "level": 30,
+                "type": "能力",
+                "range": "10米",
+                "area": "10米x4米",
+                "cooldown": "1秒",
+                "cost": "3000魔力",
+                "potency": 100,
+                "effect_tw": "向目標所在方向發出無屬性直線範圍魔法攻擊",
+                "additional_effect_tw": "暗黑<br>攻擊傷害提高10%<br>若自身已經附加暗黑狀態，則持續時間延長30秒<br>最多可延長至60秒<br>與暗黑鋒共享冷卻時間",
+                "icon_url": "./icons/DRK/暗魂.png"
+            },
+            {
+                "id": "drk8",
+                "name_tw": "嗜血",
+                "level": 35,
+                "type": "能力",
+                "cooldown": "60秒",
+                "effect_tw": "為自身附加3檔嗜血狀態:自身的戰技及魔法命中時恢復魔力，同時獲得10點暗血<br>當範圍攻擊命中敵人複數敵人時，效果只發動一次",
+                "duration": "15秒",
+                "additional_effect_tw": "暗黑<br>攻擊傷害提高10%<br>若自身已經附加暗黑狀態，則持續時間延長30秒<br>最多可延長至60秒<br>與暗黑鋒共享冷卻時間",
+                "icon_url": "./icons/DRK/嗜血.png"
+            },
+            {
+                "id": "drk9",
                 "name_tw": "暗影牆",
                 "level": 38,
                 "type": "能力",
-                "cooldown": 120,
-                "potency": 0,
-                "effect_tw": "減輕自身所受傷害 30%，持續 15 秒。",
-                "icon_url": "icons/drk/drk_shadowwall.png"
+                "cooldown": "120秒",
+                "effect_tw": "一定時間內，將自身所受的傷害減輕30%",
+                "duration": "15秒",
+                "icon_url": "./icons/DRK/暗影牆.png"
+            },
+            {
+                "id": "drk10",
+                "name_tw": "剛魂",
+                "level": 40,
+                "type": "魔法",
+                "area": "5米",
+                "cooldown": "2.50秒",
+                "effect_tw": "對自身周圍的敵人發動無屬性範圍魔法攻擊",
+                "potency": 120,
+                "combo_req": "釋放",
+                "combopotency": "160",
+                "comboeffect_tw": "恢復自身魔力",
+                "comboeffect2_tw": "獲得20點暗血",
+                "additional_effect_tw": "提升仇恨",
+                "icon_url": "./icons/DRK/剛魂.png"
+            },
+            {
+                "id": "drk11",
+                "name_tw": "暗黑鋒",
+                "level": 40,
+                "type": "能力",
+                "range": "3米",
+                "cooldown": "1秒",
+                "cost": "3000魔力",
+                "effect_tw": "對目標發動無屬性魔法攻擊",
+                "potency": 300,
+                "additional_effect_tw": "暗黑<br>攻擊傷害提高10%<br>若自身已經附加暗黑狀態，則持續時間延長30秒<br>最多可延長至60秒<br>與暗黑波動共享冷卻時間",
+                "icon_url": "./icons/DRK/暗黑鋒.png"
+            },
+            {
+                "id": "drk12",
+                "name_tw": "棄明投暗",
+                "level": 45,
+                "type": "能力",
+                "cooldown": "60秒",
+                "effect_tw": "一定時間內，令自身所受到的物理傷害減輕10%，魔法傷害減輕20%",
+                "duration": "10秒",
+                "icon_url": "./icons/DRK/棄明投暗.png"
+            },
+            {
+                "id": "drk13",
+                "name_tw": "行屍走肉",
+                "level": 50,
+                "type": "能力",
+                "cooldown": "300秒",
+                "effect_tw": "對自身附加行屍走肉狀態<br>效果中受到致命傷也不會陷入無法戰鬥狀態代價是自身體力降為1且該狀態變為死而不僵狀態<br>所有對自身發動的攻擊均無法令體力減少到1以下<br>另外，自身發動戰技和魔法攻擊命中後恢復自身體力<br>恢復力:1500<br>效果中得到相當於自身最大體力100%的恢復量後，該狀態變為出死入生<br>所有對自身發動的攻擊均無法令體力減少到1以下<br>死而不僵變為出死入生時，出死入生會繼承死而不僵狀態的剩餘持續時間<br>如恢復量不足以解除狀態直到持續時間結束，自身將陷入無法戰鬥狀態<br>以上三種狀態均對部分攻擊無效",
+                "duration": "10秒",
+                "icon_url": "./icons/DRK/行屍走肉.png"
+            },
+            {
+                "id": "drk14",
+                "name_tw": "腐穢大地",
+                "level": 52,
+                "type": "能力",
+                "area": "5米",
+                "cooldown": "90秒",
+                "effect_tw": "以自身腳下為中心產生腐穢區域<br>所有進入該區域的目標都會受到無屬性傷害",
+                "potency": 50,
+                "duration": "15秒",
+                "icon_url": "./icons/DRK/腐穢大地.png"
+            },
+            {
+                "id": "drk15",
+                "name_tw": "暗影步",
+                "level": 52,
+                "type": "能力",
+                "range": "20米",
+                "cooldown": "30秒",
+                "effect_tw": "指定一名敵人為目標，自身快速移動到目標身邊",
+                "charge": 2,
+                "additional_effect_tw": "提升仇恨",
+                "cast_req": "止步狀態下無法發動",
+                "icon_url": "./icons/DRK/暗影步.png"
+            },
+            {
+                "id": "drk16",
+                "name_tw": "吸血深淵",
+                "level": 56,
+                "type": "能力",
+                "range": "20米",
+                "area": "5米",
+                "cooldown": "60秒",
+                "effect_tw": "以自身為中心發動無屬性範圍魔法攻擊<br>與精雕怒斬共享冷卻時間",
+                "potency": 240,
+                "additional_effect_tw": "恢復自身體力\n恢復力:500",
+                "additional_effect2_tw": "恢復自身魔力",
+                "icon_url": "./icons/DRK/吸血深淵.png"
+            },
+            {
+                "id": "drk17",
+                "name_tw": "精雕怒斬",
+                "level": 60,
+                "type": "能力",
+                "range": "3米",
+                "cooldown": "60秒",
+                "effect_tw": "對目標發動物理攻擊<br>與吸血深淵共享冷卻時間",
+                "potency": 540,
+                "additional_effect_tw": "恢復自身體力\n恢復力:500",
+                "additional_effect2_tw": "恢復自身魔力",
+                "icon_url": "./icons/DRK/精雕怒斬.png"
+            },
+            {
+                "id": "drk18",
+                "name_tw": "血濺",
+                "level": 62,
+                "type": "戰技",
+                "range": "3米",
+                "cooldown": "2.50秒",
+                "effect_tw": "對目標發動物理攻擊",
+                "potency": 600,
+                "cast_req": "暗血50點",
+                "icon_url": "./icons/DRK/血濺.png"
+            },
+            {
+                "id": "drk19",
+                "name_tw": "寂滅",
+                "level": 64,
+                "type": "戰技",
+                "area": "5米",
+                "cooldown": "2.50秒",
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊",
+                "potency": 240,
+                "cast_req": "暗血50點",
+                "icon_url": "./icons/DRK/寂滅.png"
+            },
+            {
+                "id": "drk20",
+                "name_tw": "暗黑布道",
+                "level": 66,
+                "type": "能力",
+                "area": "30米",
+                "cooldown": "90秒",
+                "effect_tw": "一定時間內，令自身所受到的物理傷害減輕5%，魔法傷害減輕10%",
+                "duration": "15秒",
+                "icon_url": "./icons/DRK/暗黑布道.png"
+            },
+            {
+                "id": "drk21",
+                "name_tw": "血亂",
+                "level": 68,
+                "type": "能力",
+                "cooldown": "60秒",
+                "effect_tw": "為自身附加3檔血亂和嗜血狀態<br>血亂:血濺變為血紅亂，寂滅變為刺穿<br>嗜血:自身的戰技及魔法命中時恢復魔力，同時獲得10點暗血<br>當範圍攻擊命中複數敵人時，效果只發動一次",
+                "duration": "15秒",
+                "icon_url": "./icons/DRK/血亂.png"
+            },
+            {
+                "id": "drk22",
+                "name_tw": "至黑之夜",
+                "level": 70,
+                "type": "能力",
+                "range": "30米",
+                "cooldown": "15秒",
+                "cost": "3000魔力",
+                "effect_tw": "為自身或一名隊員附加能夠抵禦一定傷害的防護罩<br>該防護罩能夠抵銷相當於目標最大體力25%的傷害量<br>防護罩因吸收到足夠的傷害而消失時，暗黑騎士自身附加暗技狀態<br>用暗技代替魔力發動暗影波動及暗影鋒",
+                "duration": "7秒",
+                "icon_url": "./icons/DRK/至黑之夜.png"
+            },
+            {
+                "id": "drk23",
+                "name_tw": "暗影波動",
+                "level": 74,
+                "type": "能力",
+                "range": "10米",
+                "area": "10米x4米",
+                "cost": "3000魔力",
+                "cooldown": "1秒",
+                "effect_tw": "向目標所在方向發出無屬性直線範圍魔法攻擊",
+                "potency": 160,
+                "additional_effect_tw": "暗黑<br>攻擊傷害提高10%<br>若自身已經附加暗黑狀態，則持續時間延長30秒<br>最多可延長至60秒<br>與暗影鋒共享冷卻時間",
+                "icon_url": "./icons/DRK/暗影波動.png"
+            },
+            {
+                "id": "drk24",
+                "name_tw": "暗影鋒",
+                "level": 74,
+                "type": "能力",
+                "range": "3米",
+                "cooldown": "1秒",
+                "effect_tw": "向目標所在方向發出無屬性直線範圍魔法攻擊",
+                "potency": 160,
+                "additional_effect_tw": "暗黑<br>攻擊傷害提高10%<br>若自身已經附加暗黑狀態，則持續時間延長30秒<br>最多可延長至60秒<br>與暗影波動共享冷卻時間",
+                "icon_url": "./icons/DRK/暗影鋒.png"
+            },
+            {
+                "id": "drk25",
+                "name_tw": "掠影示現",
+                "level": 80,
+                "type": "能力",
+                "cooldown": "120秒",
+                "effect_tw": "令'英雄的掠影'變為實體與自身並肩作戰<br>英雄的掠影的攻擊威力:420<br>暗影使者及掠影的蔑視的威力固定<br>英雄的掠影發動暗影使者的威力:570<br>英雄的掠影發動掠影的蔑視的威力:620<br>攻擊複數敵人時，對目標之外的敵人威力降低25%",
+                "duration": "20秒",
+                "additional_effect_tw": "掠影的蔑視預備",
+                "add_effect_duration": "30秒",
+                "icon_url": "./icons/DRK/掠影示現.png"
+            },
+            {
+                "id": "drk26",
+                "name_tw": "獻奉",
+                "level": 82,
+                "type": "能力",
+                "range": "30米",
+                "cooldown": "60秒",
+                "effect_tw": "令自身或一名隊員受到的傷害減輕10%",
+                "duration": "10秒",
+                "charge": 2,
+                "icon_url": "./icons/DRK/獻奉.png"
+            },
+            {
+                "id": "drk27",
+                "name_tw": "腐穢黑暗",
+                "level": 86,
+                "type": "能力",
+                "cooldown": "20秒",
+                "effect_tw": "在自身設置的腐穢大地效果範圍內對敵人發動無屬性範圍魔法攻擊<br>攻擊複數敵人時，對第一個之外的敵人威力降低25%",
+                "potency": 500,
+                "cast_req": "腐穢大地狀態中",
+                "icon_url": "./icons/DRK/腐穢黑暗.png"
+            },
+            {
+                "id": "drk28",
+                "name_tw": "暗影使者",
+                "level": 90,
+                "type": "能力",
+                "range": "10米",
+                "area": "10米x4米",
+                "cooldown": "60秒",
+                "effect_tw": "向目標所在方向發出無屬性直線範圍魔法攻擊<br>攻擊複數敵人時，對目標之外的敵人威力降低25%",
+                "potency": 600,
+                "charge": 2,
+                "cast_req": "暗黑狀態中",
+                "icon_url": "./icons/DRK/暗影使者.png"
+            },
+            {
+                "id": "drk29",
+                "name_tw": "暗影衛",
+                "level": 92,
+                "type": "能力",
+                "cooldown": "120秒",
+                "effect_tw": "一定時間內，將自身所受的傷害減輕40%",
+                "duration": "15秒",
+                "additional_effect_tw": "影衛<br>體力低於50%時或持續時間結束後自動恢復\n恢復力:1200",
+                "add_effect_duration": "20秒",
+                "cast_req": "暗黑狀態中",
+                "icon_url": "./icons/DRK/暗影衛.png"
+            },
+            {
+                "id": "drk30",
+                "name_tw": "掠影的蔑視",
+                "level": 100,
+                "type": "戰技",
+                "range": "10米",
+                "area": "10米x4米",
+                "cooldown": "2.50秒",
+                "effect_tw": "向目標所在方向發出無屬性直線範圍魔法攻擊<br>攻擊複數敵人時，對目標之外的敵人威力降低25%",
+                "potency": 1000,
+                "cast_req": "掠影的蔑視預備狀態中",
+                "icon_url": "./icons/DRK/掠影的蔑視.png"
+            },
+            {
+                "id": "drk31",
+                "name_tw": "血紅亂",
+                "level": 96,
+                "type": "戰技",
+                "range": "3米",
+                "cooldown": "2.50秒",
+                "effect_tw": "對目標發動物理攻擊",
+                "potency": 620,
+                "additional_effect_tw": "恢復自身魔力",
+                "cast_req": "血亂",
+                "notice": "該技能無法設置到快捷欄<br>滿足發動條件後，血濺變為血紅亂",
+                "icon_url": "./icons/DRK/血紅亂.png"
+            },
+            {
+                "id": "drk32",
+                "name_tw": "報應",
+                "level": 96,
+                "type": "戰技",
+                "range": "3米",
+                "cooldown": "2.50秒",
+                "effect_tw": "對目標發動物理攻擊",
+                "potency": 720,
+                "combo_req": "血紅亂",
+                "additional_effect_tw": "恢復自身魔力",
+                "cast_req": "血亂",
+                "notice": "該技能無法設置到快捷欄<br>滿足發動條件後，血紅亂變為報應",
+                "icon_url": "./icons/DRK/報應.png"
+            },
+            {
+                "id": "drk33",
+                "name_tw": "戮山",
+                "level": 96,
+                "type": "戰技",
+                "range": "3米",
+                "cooldown": "2.50秒",
+                "effect_tw": "對目標發動物理攻擊",
+                "potency": 820,
+                "combo_req": "報應",
+                "additional_effect_tw": "恢復自身魔力",
+                "cast_req": "血亂",
+                "notice": "該技能無法設置到快捷欄<br>滿足發動條件後，報應變為戮山",
+                "icon_url": "./icons/DRK/戮山.png"
+            },
+            {
+                "id": "drk34",
+                "name_tw": "刺穿",
+                "level": 96,
+                "type": "戰技",
+                "area": "5米",
+                "cooldown": "2.50秒",
+                "effect_tw": "對自身周圍的敵人發動範圍物理攻擊",
+                "potency": 300,
+                "additional_effect_tw": "恢復自身魔力",
+                "cast_req": "血亂",
+                "notice": "該技能無法設置到快捷欄<br>滿足發動條件後，寂滅變為刺穿",
+                "icon_url": "./icons/DRK/刺穿.png"
             }
         ]
     },
     "GunBreaker": {
         "name_tw": "絕槍戰士",
         "role_tw": "坦克",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1461,7 +1909,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1471,7 +1919,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1481,7 +1929,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1489,7 +1937,7 @@
     "WhiteMage": {
         "name_tw": "白魔道士",
         "role_tw": "治療",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1498,7 +1946,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1508,7 +1956,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1518,7 +1966,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1526,7 +1974,7 @@
     "Scholar": {
         "name_tw": "學者",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1535,7 +1983,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1545,7 +1993,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1555,7 +2003,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1563,7 +2011,7 @@
     "Astrologian": {
         "name_tw": "占星術師",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1572,7 +2020,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1582,7 +2030,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1592,7 +2040,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1600,7 +2048,7 @@
     "Sage": {
         "name_tw": "賢者",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1609,7 +2057,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1619,7 +2067,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1629,7 +2077,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1637,7 +2085,7 @@
     "Monk": {
         "name_tw": "武僧",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1646,7 +2094,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1656,7 +2104,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1666,7 +2114,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1674,7 +2122,7 @@
     "Dragoon": {
         "name_tw": "龍騎士",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1683,7 +2131,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1693,7 +2141,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1703,7 +2151,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1711,7 +2159,7 @@
     "Ninja": {
         "name_tw": "忍者",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1720,7 +2168,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1730,7 +2178,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1740,7 +2188,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1748,7 +2196,7 @@
     "Samurai": {
         "name_tw": "武士",
         "role_tw": "近戰輸出",
-        "description_tw": "以華麗的刀法和快速的居合術釋放強大爆發傷害，專精於單體目標輸出。",
+        "description_tw": "以華麗的刀法和快速的居合術釋放強大爆發傷害，專精於單體目標輸出",
         "skills": [
             {
                 "id": "sam1",
@@ -1757,7 +2205,7 @@
                 "type": "能力",
                 "cooldown": 5,
                 "potency": 0,
-                "effect_tw": "消耗任意居合點數（雪月花），獲得等量的劍氣。",
+                "effect_tw": "消耗任意居合點數（雪月花），獲得等量的劍氣",
                 "icon_url": "icons/sam/sam_hagakure.png"
             },
             {
@@ -1767,7 +2215,7 @@
                 "type": "戰技",
                 "cooldown": 1,
                 "potency": 600,
-                "effect_tw": "極高的單體傷害，只能在釋放特定居合術後觸發。",
+                "effect_tw": "極高的單體傷害，只能在釋放特定居合術後觸發",
                 "icon_url": "icons/sam/sam_tsubamegaeshi.png"
             },
             {
@@ -1777,7 +2225,7 @@
                 "type": "能力",
                 "cooldown": 30,
                 "potency": 0,
-                "effect_tw": "位移到目標身邊並造成傷害，可在戰鬥中迅速調整位置。",
+                "effect_tw": "位移到目標身邊並造成傷害，可在戰鬥中迅速調整位置",
                 "icon_url": "icons/sam/sam_gyoten.png"
             }
         ]
@@ -1785,7 +2233,7 @@
     "Reaper": {
         "name_tw": "奪魂者",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1794,7 +2242,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1804,7 +2252,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1814,7 +2262,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1822,7 +2270,7 @@
     "Bard": {
         "name_tw": "吟遊詩人",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1831,7 +2279,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1841,7 +2289,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1851,7 +2299,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1859,7 +2307,7 @@
     "Machinist": {
         "name_tw": "機工士",
         "role_tw": "遠程輸出",
-        "description_tw": "使用機械裝置、砲塔和槍械，維持遠程輸出，並在過熱狀態下發動高頻率攻擊。",
+        "description_tw": "使用機械裝置、砲塔和槍械，維持遠程輸出，並在過熱狀態下發動高頻率攻擊",
         "skills": [
             {
                 "id": "mch1",
@@ -1868,7 +2316,7 @@
                 "type": "戰技",
                 "cooldown": 1.5,
                 "potency": 400,
-                "effect_tw": "在過熱狀態下才能使用的單體攻擊，是爆發階段的核心技能。",
+                "effect_tw": "在過熱狀態下才能使用的單體攻擊，是爆發階段的核心技能",
                 "icon_url": "icons/mch/mch_heatslash.png"
             },
             {
@@ -1878,7 +2326,7 @@
                 "type": "能力",
                 "cooldown": 30,
                 "potency": 0,
-                "effect_tw": "召喚一個砲塔在場上自動攻擊敵人，提供持續輸出。",
+                "effect_tw": "召喚一個砲塔在場上自動攻擊敵人，提供持續輸出",
                 "icon_url": "icons/mch/mch_autoturret.png"
             },
             {
@@ -1888,7 +2336,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "進入過熱狀態，大幅提升戰技威力。",
+                "effect_tw": "進入過熱狀態，大幅提升戰技威力",
                 "icon_url": "icons/mch/mch_hypercharge.png"
             }
         ]
@@ -1896,7 +2344,7 @@
     "Dancer": {
         "name_tw": "黑魔法師",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1905,7 +2353,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1915,7 +2363,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1925,7 +2373,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1933,7 +2381,7 @@
     "BlackMage": {
         "name_tw": "黑魔法師",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1942,7 +2390,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1952,7 +2400,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1962,7 +2410,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -1970,7 +2418,7 @@
     "Summoner": {
         "name_tw": "召喚士",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -1979,7 +2427,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -1989,7 +2437,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -1999,7 +2447,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -2007,44 +2455,55 @@
     "RedMage": {
         "name_tw": "紅魔道士",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以刺劍作為武器的魔法導師，是兼備遠端魔法攻擊和近距離攻擊的遠端魔法職業",
         "skills": [
             {
-                "id": "whm1",
-                "name_tw": "神速魔",
-                "level": 50,
-                "type": "能力",
-                "cooldown": 60,
-                "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
-                "icon_url": "icons/whm/whm_swiftcast.png"
+                "id": "rdm1",
+                "name_tw": "回刺",
+                "level": 1,
+                "type": "戰技",
+                "range": "3米",
+                "cooldown": "2.50秒",
+                "potency": 130,
+                "effect_tw": "對目標發動物理攻擊<br>平衡量譜中黑魔元與白魔元都在20點以上時，該技能變為魔回刺",
+                "icon_url": "./icons/RDM/回刺.png"
             },
             {
-                "id": "whm2",
-                "name_tw": "再生",
-                "level": 35,
+                "id": "rdm2",
+                "name_tw": "搖盪",
+                "level": 2,
                 "type": "魔法",
-                "cooldown": 2.5,
-                "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
-                "icon_url": "icons/whm/whm_regen.png"
+                "range": "25米",
+                "cast_time": "2.00秒",
+                "cooldown": "2.50秒",
+                "cost": "200魔力",
+                "potency": 170,
+                "effect_tw": "對目標發動無屬性魔法攻擊",
+                "additional_effect_tw": "獲得2點黑魔元與2點白魔元",
+                "icon_url": "./icons/RDM/搖盪.png"
             },
             {
-                "id": "whm3",
-                "name_tw": "天賜祝福",
-                "level": 60,
-                "type": "能力",
-                "cooldown": 60,
-                "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
-                "icon_url": "icons/whm/whm_benediction.png"
+                "id": "rdm3",
+                "name_tw": "赤閃雷",
+                "level": 4,
+                "type": "魔法",
+                "range": "25米",
+                "cast_time": "5.00秒",
+                "cooldown": "2.50秒",
+                "cost": "300魔力",
+                "potency": 360,
+                "effect_tw": "對目標發動雷屬性魔法攻擊",
+                "additional_effect_tw": "獲得6點黑魔元",
+                "additional_effect2_tw": "赤火炎預備(發動機率50%)",
+                "add_effect2_duration": "30秒",
+                "icon_url": "./icons/RDM/赤閃雷.png"
             }
         ]
     },
     "Viper": {
         "name_tw": "黑魔法師",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -2053,7 +2512,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -2063,7 +2522,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -2073,7 +2532,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]
@@ -2081,7 +2540,7 @@
     "Pictomancer": {
         "name_tw": "繪靈法師",
         "role_tw": "輸出",
-        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力。",
+        "description_tw": "以強大的單體和群體治療魔法支撐隊伍，是基礎治療職責的代表，並擁有強大的瞬間爆發治療能力",
         "skills": [
             {
                 "id": "whm1",
@@ -2090,7 +2549,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放。",
+                "effect_tw": "使下一個詠唱時間為 3 秒及以下的魔法可以瞬間施放",
                 "icon_url": "icons/whm/whm_swiftcast.png"
             },
             {
@@ -2100,7 +2559,7 @@
                 "type": "魔法",
                 "cooldown": 2.5,
                 "potency": 0,
-                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP。",
+                "effect_tw": "對目標施加一個持續治療 (HoT) 效果，每 3 秒回復 HP",
                 "icon_url": "icons/whm/whm_regen.png"
             },
             {
@@ -2110,7 +2569,7 @@
                 "type": "能力",
                 "cooldown": 60,
                 "potency": 0,
-                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段。",
+                "effect_tw": "瞬間將目標 HP 完全回復，強大的應急治療手段",
                 "icon_url": "icons/whm/whm_benediction.png"
             }
         ]

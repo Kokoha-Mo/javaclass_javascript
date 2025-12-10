@@ -12,11 +12,34 @@
 
     <script>
         // 取亂數
-
+        console.log(Math.random());
         // 小練習：透過 Math.random() 取得 0-5 之間的亂數
-        
+        console.log(Math.floor(Math.random() * 6));
         // 小練習：透過 Math.random() 取得 2-5 之間的亂數
-
+        console.log(Math.floor(Math.random() * 4 + 2));
+        //
+        let max = 5;
+        let min = 0;
+        let RandomNumber = Math.floor((Math.random() * (max - min + 1) + min));
+        console.log(RandomNumber);
+        //
+        let list = [
+            { 名稱: "五十嵐", 品項: ["四季春青茶", "阿薩姆奶茶", "八冰茶"] },
+            { 名稱: "清心", 品項: ["黑糖奶茶", "仙草凍奶茶"] },
+            { 名稱: "可不可", 品項: ["熟成紅茶", "胭脂紅茶", "麗春紅茶"] },
+        ]
+        let shopmax = list.length - 1;
+        let shopmin = 0;
+        //隨機店碼
+        let Ramdonshop = Math.floor(Math.random() * (shopmax - shopmin + 1) + shopmin)
+        //
+        let drinkmax = list[Ramdonshop].品項.length - 1;
+        let drinkmin = 0;
+        //隨機飲料碼
+        let Ranmdondrink = Math.floor(Math.random() * (drinkmax - drinkmin + 1) + drinkmin)
+        //
+        console.log("飲料店:" + list[Ramdonshop].名稱);
+        console.log("飲料:" + list[Ramdonshop].品項[Ranmdondrink]);
     </script>
 
 </body>

@@ -8,19 +8,43 @@
 <body>
 
     <h4>Alphabetical JavaScript Reference</h4>
-    <p><a href="https://www.w3schools.com/jsref/jsref_reference.asp">https://www.w3schools.com/jsref/jsref_reference.asp</a></p>
+    <p><a
+            href="https://www.w3schools.com/jsref/jsref_reference.asp">https://www.w3schools.com/jsref/jsref_reference.asp</a>
+    </p>
     <h4>JavaScript Global Reference</h4>
-    <p><a href="https://www.w3schools.com/jsref/jsref_obj_global.asp">https://www.w3schools.com/jsref/jsref_obj_global.asp</a></p>
-    
+    <p><a
+            href="https://www.w3schools.com/jsref/jsref_obj_global.asp">https://www.w3schools.com/jsref/jsref_obj_global.asp</a>
+    </p>
+
     <script>
 
         // 10. 關於"字串"的運算..
         //     a. "11" + 1
         //     b. "11" - 1 
-    
-      
+        let a = "11" + 1;
+        let b = 1 + "11"; // 字串 + 數值 = 字串
+        let c = "11" - 1; // 字串(數字內容) - 數值 = 數值
+        let d = "what" - 1; // 字串(非數字內容) - 數值 = NAN
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+
         // 20. parseInt() 把文字轉換為數值 (預設為10進位的轉換方式)
-    
+        let e = "11";
+        console.log(parseInt(e) + 1);
+        let f = "word";
+        console.log(parseInt(f));
+        let g = "123word";
+        console.log(parseInt(g));
+        let h = "word123";
+        console.log(parseInt(h));
+        let i = "123word456";
+        console.log(parseInt(i));
+        // 非純數字但開頭為數字只取開頭
+
+
+
 
     </script>
 
