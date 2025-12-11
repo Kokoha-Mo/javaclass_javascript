@@ -9,12 +9,16 @@
 
     <p id="demo">JavaScript can change HTML content.</p>
 
-    <button>Click Me!</button>
+    <button onclick="ChangeContent()">Click Me!</button>
 
     <script>
         // 10. 透過 console.log 先確認事件是否有綁定成功
-
+        function ChangeContent() {
+            // document.getElementById("demo").innerText = prompt("輸入姓名");
+            document.getElementById("demo").innerHTML = "<i>innerHTML</i>";
+        }
         // 20. 用 id 取得網頁上面的元素
+        console.log(getElementById("demo"));
 
         // 30. 修改元素的網頁內容
     </script>

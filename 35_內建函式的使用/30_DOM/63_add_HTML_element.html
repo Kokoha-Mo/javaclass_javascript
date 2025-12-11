@@ -8,20 +8,33 @@
 <body>
 
     <p id="demo">我是一段文字</p>
-   
+
     <script>
         // 10. createElement  增加一個元素 (div)
+        let CreDiv = document.createElement("div");
+        //sol.1
+        CreDiv.innerText = "我是一段文字1";
+        document.body.insertBefore(CreDiv, document.getElementById("demo"));
+
+        //sol.2
         // 11. createTextNode 新增一串文字
+        let CreDiv2 = document.createElement("div");
+        let CreText = document.createTextNode("我是一段文字2");
         // 12. appendChild    將文字附加到div去
+        CreDiv2.appendChild(CreText);
         // 13. insertBefore   指定在元素前增加
+        document.body.insertBefore(CreDiv2, document.getElementById("demo"));
     </script>
 
     <script>
         // 20. createElement 增加一個元素 (img)
         // 21. setAttribute  設定新增元素的屬性
         // 22. appendChild   直接在Html文件中增加元素
+        let CreImg = document.createElement("img");
+        CreImg.setAttribute("src", "../../_image/cat.png");
+        document.body.appendChild(CreImg);
     </script>
-    
+
 </body>
 
 </html>

@@ -8,15 +8,21 @@
 <body>
 
     <!-- 10. 畫面上設定一張圖片 -->
-   
+    <img id="cat" style="top: 200px; position: absolute;" src="../../_image/cat.png">
+    <img id="dog" src="../../_image/dog.png">
     <script>
-       
+
         // 20. 透過 元素.style.top 取得 樣式 top 值
+        let EleCat = document.getElementById("cat");
+        console.log(EleCat.style.top);
+        let EleDog = document.getElementById("dog");
+        console.log(EleDog.style.top);
 
         // 30. 透過 window.getComputedStyle(元素).getPropertyValue(樣式屬性));
-
+        console.log(window.getComputedStyle(EleCat).getPropertyValue("top"));
+        console.log(window.getComputedStyle(EleDog).getPropertyValue("top"));
         // 40. 觀察上述兩者差異
-
+        // 沒設值的樣式，getComputedStyle() 會回傳 auto 值
     </script>
 </body>
 

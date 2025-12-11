@@ -10,12 +10,27 @@
     <h3>點選圖片後，置換成另外一張圖片</h3>
 
     <!-- 10. 設定一張圖片 -->
-   
+    <img src="../../_image/cat.png">
     <script>
-        
-        // 11. 取得上一個步驟的圖片
 
+        // 11. 取得上一個步驟的圖片
+        // console.log(document.getElementsByTagName("img"));
+        let Cat = document.getElementsByTagName("img")[0];
         // 20. 設定點選圖片後，換成另外一張圖片
+        //原因： 當瀏覽器讀取 src 屬性時
+        // 它通常會將相對路徑（如 ../../_image/cat.png）
+        // 轉換為一個 絕對 URL（例如 http://127.0.0.1:5500/_image/cat.png）
+        //為了確保判斷的可靠性
+        // 建議檢查 src 屬性是否 包含 或 結尾是 圖片檔案名稱。
+        Cat.onclick = function () {
+            // if (Cat.src.includes("cat.png")) {
+            //     Cat.src = "../../_image/dog.png";
+            // }
+            // else {
+            //     Cat.src = "../../_image/cat.png";
+            // }
+            Cat.src = Cat.src.includes("cat.png") ? "../../_image/dog.png" : "../../_image/cat.png";
+        }
 
     </script>
 

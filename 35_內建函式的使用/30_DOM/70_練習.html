@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <label for="">你捕獲的寶可夢</label>
+    <input type="text" id="Pokemon">
+    <button id="btn">建檔</button>
+    <script>
+        //讓使用輸入一串文字，每案一次就生成一個元素
+        btn.onclick = function () {
+            let NewP = document.createElement("p");
+            NewP.innerText = document.getElementById("Pokemon").value;
+            document.body.appendChild(NewP);
+        }
+
+    </script>
+</body>
+
+</html>

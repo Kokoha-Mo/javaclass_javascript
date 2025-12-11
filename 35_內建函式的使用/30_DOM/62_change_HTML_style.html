@@ -8,17 +8,25 @@
 <body>
 
     <p id="memo">點選圖片後，放大圖片和文字</p>
-    
+
     <!-- 10. 設定一張圖片 -->
-    
+    <img src="../../_image/cat.png">
     <script>
         // 20. 網頁的 圖片的 樣式的 寬度 改變
-
-        // 21. 網頁的 圖片的 樣式的 高度 改變
-
+        let Cat = document.getElementsByTagName("img")[0];
+        Cat.onclick = function () {
+            Cat.style.width = "300px";
+            // 21. 網頁的 圖片的 樣式的 高度 改變
+            Cat.style.height = "300px";
+        }
         // 22. 網頁的 memo的 樣式的 字型 改變
+        document.getElementById("memo").onclick = function changeMemo() {
+            document.getElementById("memo").style.fontSize = "20px";
+        };
+
+
     </script>
-    
+
 </body>
 
 </html>

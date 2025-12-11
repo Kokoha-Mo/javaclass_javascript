@@ -17,7 +17,11 @@
         // 更新網址的寫法 2 document.location.href
         setTimeout(function () {
             console.log('5秒後');
-        }, 5000);
+        }, 5000); //不會重複執行
+
+        setTimeout(function () {
+            document.location.href = "https://one-piece.com/";
+        }, 10000);
     </script>
 </body>
 
