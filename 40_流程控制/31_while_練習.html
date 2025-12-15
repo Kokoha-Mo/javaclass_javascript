@@ -6,12 +6,24 @@
 </head>
 
 <body>
-    
+
     <script>
 
         // 10. 計算從1加到10數值為多少
+        let sum = 0;
+        let i = 1;
+        while (i <= 10) {
+            sum += i;
+            i++;
+        }
+        console.log(sum);
 
         // 20. 網頁必須輸入通關密碼1234才會停止
+        let password = "";
+        while (password != "1234") {
+            password = prompt("請輸入通關密碼");
+        }
+        alert("通關成功");
 
     </script>
 </body>

@@ -227,3 +227,8 @@ body {
 .notice {
     color: #f9ffa4;
 }
+
+strong,
+b {
+    color: #3eeb63;
+}

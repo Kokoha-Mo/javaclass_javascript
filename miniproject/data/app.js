@@ -50,6 +50,7 @@ function renderSkillCard(skill) {
                     <p><strong>冷卻時間:</strong> ${skill.cooldown || '—'}</p>
                     ${skill.cost ? `<p><strong>消耗:</strong> ${skill.cost || '—'}</p>` : ''}
                     ${skill.potency ? `<p><strong>威力:</strong> ${skill.potency || '—'}</p>` : ''}
+                    ${skill.other_potency ? `<p>${skill.other_potency || '—'}</p>` : ''}
                     ${skill.cure_potency ? `<p><strong>恢復力:</strong> ${skill.cure_potency || '—'}</p>` : ''}
                     ${skill.duration ? `<p><strong>持續時間:</strong> ${skill.duration || '—'}</p > ` : ''}
                     ${skill.charge ? `<p><strong>積蓄次數:</strong> ${skill.charge || '—'}</p>` : ''}

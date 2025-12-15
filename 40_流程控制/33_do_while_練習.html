@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 </head>
+
 <body>
-    
+    <label for="price">歷史價格</label>
+    <p id="label"></p>
     <script>
         // * 使用 do.. while 完成底下練習
 
         // 10. 設計網頁上應該要有的元素
 
         // 20. 透過 prompt 讓使用者輸入資料
+        let price = 0;
+        let total = 0;
+        let count = 0;
+        let sum = 0;
+        do {
+            price = prompt("請輸入價格");
+            if (price == 0) {
+                break;
+            }
+            count++;
+            sum += Number(price);
+            document.getElementById("label").appendChild(document.createElement("p")).innerHTML = "第" + count + "次" + "價格:" + price;
+        } while (price != 0);
+        document.getElementById("label").appendChild(document.createElement("p")).innerHTML = "總金額:" + sum;
 
         // 30. 若使用者輸入 0 表示不再輸入
         //     畫面顯示 全部輸入過的資料 和 總金額
     </script>
 
 </body>
+
 </html>

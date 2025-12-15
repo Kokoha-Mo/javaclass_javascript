@@ -16,27 +16,63 @@
 
     <script>
         // 10. 使用 for 迴圈，在 console 呈現 這個月1號 到 目前系統日
-
+        for (let d = 1; d <= new Date().getDate(); d++) {
+            console.log(d);
+        }
         // 20. 使用 for 迴圈，逐一取得陣列裡面的元素
         var weekList = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-
+        for (let w = 0; w < weekList.length; w++) {
+            console.log(weekList[w]);
+        }
         // 30. 使用 for 迴圈，計算從 1 加到 10
+        let sum = 0;
+        for (let s = 1; s <= 10; s++) {
+            sum += s;
+        }
+        console.log(sum);
 
         // 40. 雙層迴圈 - 長方型星星 #pSquare
-        // **** 
-        // **** 
-        // **** 
-        // **** 
-        // **** 
         // ****
-
+        // ****
+        // ****
+        // ****
+        // ****
+        // ****
+        // for (a = 0; a < 5; a++) {
+        //     document.getElementById("pSquare").appendChild(document.createElement("p")).innerHTML = "****";
+        // }
+        // -----------------------------------
+        let square = "";
+        for (let x = 0; x < 6; x++) {
+            for (let y = 0; y < 4; y++) {
+                square += "*";
+            }
+            square += "<br>";
+        }
+        document.getElementById("pSquare").innerHTML = square;
         // 50. 雙層迴圈 - 三角形 #pTriangle
-        // * 
-        // ** 
-        // *** 
-        // **** 
+        // *
+        // **
+        // ***
+        // ****
+        let triangle = "";
+        for (let xx = 0; xx < 5; xx++) {
+            for (let yy = 0; yy < xx; yy++) {
+                triangle += "*";
+            }
+            triangle += "<br>";
+        }
+        document.getElementById("pTriangle").innerHTML = triangle;
 
         // 60. 九九乘法表 (tab為 "&#9;") + <pre> 標籤 #pTimes
+        let times = "";
+        for (let i = 1; i <= 9; i++) {
+            for (let j = 1; j <= 9; j++) {
+                times += j + "*" + i + "=" + i * j + "\t";
+            }
+            times += "<br>";
+        }
+        document.getElementById("pTimes").innerHTML = times;
 
     </script>
 </body>
