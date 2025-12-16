@@ -13,8 +13,8 @@ function renderSkillCard(skill) {
             <p><strong>連擊條件:</strong> ${skill.combo_req || '—'}</p>
             ${skill.combopotency ? `<p><strong>連擊威力:</strong> ${skill.combopotency || '—'}</p>` : ''}
             ${skill.combo_duration ? `<p><strong>持續時間:</strong> ${skill.combo_duration || '—'}</p>` : ''}
-            ${skill.comboeffect_tw ? `<p><strong>連擊成功:</strong> ${skill.comboeffect_tw || '—'}</p>` : ''}
-            ${skill.comboeffect2_tw ? `<p><strong>連擊成功:</strong> ${skill.comboeffect2_tw || '—'}</p>` : ''}
+            ${skill.combo_effect_tw ? `<p><strong>連擊成功:</strong> ${skill.comboeffect_tw || '—'}</p>` : ''}
+            ${skill.combo_effect2_tw ? `<p><strong>連擊成功:</strong> ${skill.comboeffect2_tw || '—'}</p>` : ''}
         </div>
     ` : ''; // 如果沒有連擊資訊，則為空字串
 
