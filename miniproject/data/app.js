@@ -4,17 +4,17 @@ let allJobData = {};
 // --- 函數 1：渲染單一技能卡片 ---
 function renderSkillCard(skill) {
     // 檢查是否有連擊條件，用於決定是否顯示連擊區塊
-    const hasCombo = skill.combo_req || skill.combopotency;
+    const hasCombo = skill.combo_req || skill.combo_potency;
 
     // 連擊區塊的 HTML，只有在有連擊資訊時才生成
     const comboHTML = hasCombo ? `
         <div class="skill-combo">
         <h5>連擊資訊</h5>
             <p><strong>連擊條件:</strong> ${skill.combo_req || '—'}</p>
-            ${skill.combopotency ? `<p><strong>連擊威力:</strong> ${skill.combopotency || '—'}</p>` : ''}
+            ${skill.combo_potency ? `<p><strong>連擊威力:</strong> ${skill.combo_potency || '—'}</p>` : ''}
             ${skill.combo_duration ? `<p><strong>持續時間:</strong> ${skill.combo_duration || '—'}</p>` : ''}
-            ${skill.combo_effect_tw ? `<p><strong>連擊成功:</strong> ${skill.comboeffect_tw || '—'}</p>` : ''}
-            ${skill.combo_effect2_tw ? `<p><strong>連擊成功:</strong> ${skill.comboeffect2_tw || '—'}</p>` : ''}
+            ${skill.combo_effect_tw ? `<p><strong>連擊成功:</strong> ${skill.combo_effect_tw || '—'}</p>` : ''}
+            ${skill.combo_effect2_tw ? `<p><strong>連擊成功:</strong> ${skill.combo_effect2_tw || '—'}</p>` : ''}
         </div>
     ` : ''; // 如果沒有連擊資訊，則為空字串
 
