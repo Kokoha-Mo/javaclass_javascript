@@ -1,6 +1,7 @@
 /* --- 基礎重置與字體 --- */
+
 :root {
-    --bg-dark: #ffffff;
+    --bg-dark: #2e2e2e;
     /* 主要背景：極深的藍黑 */
     --bg-medium: #51524e;
     /* 側邊欄/卡片背景：深藍灰 */
@@ -12,17 +13,78 @@
     /* 標準文字色 */
 }
 
+/* --- body 樣式 --- */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    height: 300vh;
+    height: 100vh;
     background-color: var(--bg-dark);
     /* 使用深藍黑背景 */
     color: var(--text-color);
 }
 
-/* --- 1. Header 佈局 --- */
+
+
+
+
+
+/* #job-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+} */
+
+/* --- Footer 樣式 --- */
+
+.site-footer {
+    background-color: #111;
+    /* 比主內容深一點 */
+    color: #888;
+    padding: 30px 20px;
+    margin-top: 50px;
+    /* 與上方內容保持距離 */
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-content a {
+    color: #00c6ff;
+    /* 你的主色調 */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: #ffd700;
+    /* 懸停時變金色 */
+    text-decoration: underline;
+}
+
+.copyright-notice {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 0.8em;
+}
+
+.version-tag {
+    margin-top: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+/* --- Header 樣式 --- */
+
 #main-header {
     background-color: #51524e;
     /* 比背景更深的黑色 */
@@ -44,16 +106,61 @@ body {
     /* 增加發光效果 */
 }
 
-/* --- 2. App Container 佈局 (保持 Grid) --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    /* 讓 Logo、導覽、搜尋框分布在兩端與中間 */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+    border-bottom: 2px solid #c0a060;
+    /* 加一條 FF14 標誌性的金色細邊 */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* Logo 與文字的間距 */
+}
+
+.header-logo {
+    height: 40px;
+    /* 控制 Logo 的高度，根據您的 Header 調整 */
+    width: auto;
+    /* 寬度自動縮放 */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+    /* 讓 Logo 有淡淡發光的感覺 */
+}
+
+header h1 {
+    font-size: 1.5em;
+    color: #f7f7f7;
+    margin: 0;
+    white-space: nowrap;
+    /* 防止標題斷行 */
+}
+
+
+
+
+
+
+/* --- App Container 佈局 (保持 Grid) --- */
 #app-container {
     display: grid;
     grid-template-columns: 250px 1fr;
     max-width: 1400px;
-    margin: 20px auto;
+    margin: auto;
     gap: 20px;
 }
 
-/* --- 3. Sidebar 樣式 --- */
+
+
+
+
+/* --- Sidebar 樣式 --- */
+
 #sidebar-nav {
     background-color: var(--bg-medium);
     padding: 15px;
@@ -89,7 +196,13 @@ body {
     font-weight: bold;
 }
 
-/* --- 4. Main Content 樣式 --- */
+
+
+
+
+
+/* --- Main Content 樣式 --- */
+
 #main-content {
     background-color: var(--bg-medium);
     padding: 20px;
@@ -167,9 +280,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
-
-
-/* 2. 標題區 */
+/* 標題區 */
 .skill-header {
     display: flex;
     align-items: center;
@@ -199,8 +310,6 @@ body {
     font-style: italic;
 }
 
-
-
 /* 技能類型顏色高亮 (可自行擴充) */
 .skill-type {
     padding: 2px 6px;
@@ -224,7 +333,6 @@ body {
     background-color: #6aa3ee;
 }
 
-
 .type-召喚物 {
     background-color: #a842ec;
 }
@@ -236,4 +344,9 @@ body {
 strong,
 b {
     color: #3eeb63;
+}
+
+.active-job {
+    color: var(--accent-color) !important;
+    font-weight: bold;
 }

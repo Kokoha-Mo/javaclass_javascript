@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FF14 技能資料庫模擬</title>
+    <link rel="icon" href="./icons/icon.png" type="image/png">
     <link rel="stylesheet" href="miniproject.css">
 
 </head>
 
 <body>
-
     <header id="main-header">
         <h1>FF14 職業技能資料庫</h1>
         <div id="search-bar">
-            <input type="text" placeholder="搜尋技能名稱...">
-            <button>搜尋</button>
+            <div class="search-container">
+                <input type="text" id="skill-search" placeholder="🔍 搜尋所有職業技能...">
+                <button id="search-btn" onclick="triggerSearch()">查詢</button>
+            </div>
         </div>
     </header>
 
@@ -42,7 +44,28 @@
 
             </div>
         </div>
+
+        <!-- <div id="job-background">
+            <img src="./icons/JOB/job_01.webp">
+        </div> -->
     </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="source-info">
+                資料來源：本站技能數據參考自
+                <a href="https://ff14.huijiwiki.com/wiki/首页" target="_blank" rel="noopener noreferrer">
+                    最終幻想14中文維基 (灰機Wiki)
+                </a>
+            </p>
+            <p class="copyright-notice">
+                本站僅供個人學習與學術研究使用。遊戲內所有圖像、名稱與數據版權均為
+                <strong>SQUARE ENIX CO., LTD.</strong> 所有。
+            </p>
+            <p class="version-tag">FFXIV Skill Database Project &copy; 2024</p>
+        </div>
+    </footer>
 
     <script src="./data/app.js"></script>
 </body>

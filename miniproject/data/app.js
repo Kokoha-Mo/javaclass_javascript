@@ -1,11 +1,104 @@
 // 核心數據變數：將從 JSON 載入所有職業資料
 let allJobData = {};
+let allSkillsData = []; // 儲存所有職業的所有技能
 
-// --- 函數 1：渲染單一技能卡片 ---
+
+// --- 核心跨職業過濾和渲染函數 ---
+function filterAllSkills() {
+    // 1. 獲取輸入框的值
+    const searchTerm = document.getElementById('skill-search').value.toLowerCase().trim();
+
+    const skillListContainer = document.getElementById('skill-list-container');
+
+    // 如果搜尋欄為空，則應該顯示當前選中職業的技能，而不是所有技能
+    if (searchTerm === '') {
+        // 如果您希望搜尋欄空白時顯示所有職業所有技能，則使用 allSkillsData
+        // 如果希望顯示當前選中職業的技能，則需要從路由中獲取當前 JobKey
+
+        // 為了簡潔，我們假設當搜尋欄清空時，頁面會回到預設的單職業顯示模式。
+        const currentJobKey = window.location.hash.substring(1) || Object.keys(allJobData)[0];
+        if (currentJobKey && allJobData[currentJobKey]) {
+            renderFilteredSkills(allJobData[currentJobKey].skills);
+        }
+        return;
+    }
+
+    // 2. 過濾邏輯：篩選所有技能，只保留名稱包含搜尋詞的技能
+    const filteredSkills = allSkillsData.filter(skill => {
+        // 確保 skill.name_tw 存在且是字串，以避免錯誤
+        if (typeof skill.name_tw === 'string') {
+            return skill.name_tw.toLowerCase().includes(searchTerm);
+        }
+        return false;
+    });
+
+    // 3. 渲染過濾後的結果
+    let skillsHtml = '';
+    filteredSkills.forEach(skill => {
+        // 💡 提示：在技能卡片中加入職業名稱，讓使用者知道這是哪個職業的技能
+        skillsHtml += renderSkillCard(skill);
+    });
+    skillListContainer.innerHTML = skillsHtml;
+    attachTooltipListeners();
+
+    // 4. 顯示無結果提示
+    if (filteredSkills.length === 0) {
+        skillListContainer.innerHTML = '<p class="no-results">找不到包含 「' + searchTerm + '」 的技能名稱。</p>';
+    }
+
+
+}
+
+function triggerSearch() {
+    const searchTerm = document.getElementById('skill-search').value.trim();
+    if (searchTerm) {
+        // 將網址改為 #search?q=關鍵字
+        window.location.hash = `search?q=${encodeURIComponent(searchTerm)}`;
+    }
+}
+
+// 支援按下 Enter 鍵搜尋
+document.getElementById('skill-search')?.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        triggerSearch();
+    }
+});
+
+
+function renderSearchPage(searchTerm) {
+    const term = searchTerm.toLowerCase();
+
+    // 1. 更新標題與隱藏側邊欄資訊 (因為跨職業搜尋不適用特定職業的特性/職責)
+    document.getElementById('job-title').textContent = `搜尋結果: "${searchTerm}"`;
+    document.getElementById('job-description').textContent = "顯示所有職業中包含關鍵字的技能";
+    document.getElementById('side-info-container').innerHTML = ""; // 清空側邊欄
+
+    // 2. 過濾全技能大陣列 (allSkillsData 在 initApp 裡已經建立好了)
+    const filteredSkills = allSkillsData.filter(skill =>
+        skill.name_tw.toLowerCase().includes(term)
+    );
+
+    // 3. 渲染技能卡片
+    const skillListContainer = document.getElementById('skill-list-container');
+    if (filteredSkills.length > 0) {
+        skillListContainer.innerHTML = filteredSkills.map(skill => renderSkillCard(skill)).join('');
+        attachTooltipListeners(); // 記得重新掛載懸停效果
+    } else {
+        skillListContainer.innerHTML = `<p class="no-results">找不到包含 "${searchTerm}" 的技能</p>`;
+    }
+
+    document.querySelectorAll('#job-list a').forEach(a => {
+        a.classList.remove('active-job');
+    });
+}
+
+
+
+// --- 渲染單一技能卡片 ---
 function renderSkillCard(skill) {
     // 檢查是否有連擊條件，用於決定是否顯示連擊區塊
     const hasCombo = skill.combo_req || skill.combo_potency;
-
+    const jobTag = skill.jobName ? `<small style="color: #aaa;"> [${skill.jobName}]</small>` : '';
     // 連擊區塊的 HTML，只有在有連擊資訊時才生成
     const comboHTML = hasCombo ? `
         <div class="skill-combo">
@@ -37,7 +130,7 @@ function renderSkillCard(skill) {
         <div class="skill-card" data-skill-id="${skill.id}">
             <div class="skill-header">
                 <img src="${skill.icon_url || 'default_icon.png'}" alt="${skill.name_tw}" class="skill-icon">
-                <h4>${skill.name_tw}<br> <p><span class="skill-type type-${skill.type}">${skill.type}</span></p></h4>
+                <h4>${skill.name_tw}<br>${jobTag}<br><span class="skill-type type-${skill.type}">${skill.type}</span></h4>
             </div>
             
             <div class="skill-tooltip">
@@ -60,15 +153,34 @@ function renderSkillCard(skill) {
                     ${addEffectHTML}
                     ${skill.notice ? `<p class="notice"> ${skill.notice || '—'}</p>` : ''}
                     ${comboHTML}
-                </div >
-            </div >
-        </div >
-    `;
+                    </div >
+                    </div >
+                    </div >
+                    `;
 }
 
 
 
-// --- 函數 2：根據職業數據渲染主內容頁面 ---
+// --- 動態更新側邊欄導航 ---
+function updateSidebarNav(data) {
+    const jobListElement = document.getElementById('job-list');
+    jobListElement.innerHTML = ''; // 清空現有列表
+
+    for (const key in data) {
+        if (data.hasOwnProperty(key)) {
+            const job = data[key];
+            const listItem = document.createElement('li');
+
+            // 點擊後會改變 URL Hash，觸發 hashchange 事件
+            listItem.innerHTML = `<a href="#${key}">${job.name_tw} (${key})</a>`;
+            jobListElement.appendChild(listItem);
+        }
+    }
+}
+
+
+
+// --- 根據職業數據渲染主內容頁面 ---
 function renderJobPage(jobKey) {
     const job = allJobData[jobKey];
     const skillListContainer = document.getElementById('skill-list-container');
@@ -82,6 +194,12 @@ function renderJobPage(jobKey) {
     // 1. 更新職業標題和描述
     document.getElementById('job-title').textContent = `${job.name_tw} (${jobKey})`;
     document.getElementById('job-description').textContent = job.description_tw;
+
+
+    // // 2. 渲染當前職業的所有技能
+    // renderFilteredSkills(job.skills);
+
+
 
     // 2. 動態生成技能卡片列表
     let skillsHtml = '';
@@ -106,25 +224,7 @@ function renderJobPage(jobKey) {
 
 
 
-// --- 函數 3：動態更新側邊欄導航 ---
-function updateSidebarNav(data) {
-    const jobListElement = document.getElementById('job-list');
-    jobListElement.innerHTML = ''; // 清空現有列表
-
-    for (const key in data) {
-        if (data.hasOwnProperty(key)) {
-            const job = data[key];
-            const listItem = document.createElement('li');
-
-            // 點擊後會改變 URL Hash，觸發 hashchange 事件
-            listItem.innerHTML = `<a href="#${key}">${job.name_tw} (${key})</a>`;
-            jobListElement.appendChild(listItem);
-        }
-    }
-}
-
-
-
+// --- 技能內容懸停 ---
 let hideTimeout;
 const HIDE_DELAY = 100; // 延遲 100 毫秒才隱藏
 
@@ -188,51 +288,64 @@ function attachTooltipListeners() {
 }
 
 
-// --- 函數 4：處理 URL Hash 變化 (路由處理) ---
-function handleHashChange() {
-    const jobKey = window.location.hash.substring(1);
 
-    if (jobKey && allJobData[jobKey]) {
-        renderJobPage(jobKey);
-    } else if (Object.keys(allJobData).length > 0) {
-        // 如果 Hash 不存在或無效，則預設載入第一個職業
+// --- 處理 URL Hash 變化 (路由處理) ---
+function handleHashChange() {
+    const hash = window.location.hash.substring(1); // 取得 # 之後的字串
+
+    // 檢查是否為搜尋模式
+    if (hash.startsWith('search?q=')) {
+        const query = decodeURIComponent(hash.split('=')[1]);
+        renderSearchPage(query); // 執行跨職業搜尋渲染
+    }
+    // 原有的職業切換邏輯
+    else if (hash && allJobData[hash]) {
+        renderJobPage(hash);
+    }
+    // 預設跳轉
+    else if (Object.keys(allJobData).length > 0) {
         const defaultJobKey = Object.keys(allJobData)[0];
         window.location.hash = defaultJobKey;
-        // renderJobPage(defaultJobKey); // hashchange 事件會再次觸發，無需重複調用
     }
 }
 
 
+
 // --- 核心函數：應用程式初始化 ---
 async function initApp() {
-
-    // 1. 數據載入步驟
     try {
         const response = await fetch('./data/jobs.json');
-
         if (!response.ok) {
             throw new Error(`HTTP 錯誤! 狀態碼: ${response.status}。`);
         }
 
         allJobData = await response.json();
-
         console.log('JSON 數據載入成功');
 
-        // 2. 載入成功後，更新側邊欄並處理路由
+        // --- 💡 關鍵新增：建立全技能大陣列 ---
+        allSkillsData = []; // 清空一次
+        for (const jobKey in allJobData) {
+            const job = allJobData[jobKey];
+            if (job.skills && Array.isArray(job.skills)) {
+                job.skills.forEach(skill => {
+                    // 額外塞入職業名稱，這樣搜尋出來時才知道是誰的技能
+                    skill.jobName = job.name_tw;
+                    allSkillsData.push(skill);
+                });
+            }
+        }
+        // ------------------------------------
+
         updateSidebarNav(allJobData);
-
-        // 3. 監聽 Hash 變化 (模擬 SPA 路由)
         window.addEventListener('hashchange', handleHashChange);
-
-        // 4. 頁面初次載入時執行路由判斷
         handleHashChange();
 
     } catch (error) {
         console.error('載入或解析 JSON 失敗:', error);
         document.getElementById('main-content').innerHTML = `
-    < h2 > 資料載入錯誤</h2 >
-        <p>無法載入職業技能資料。請確認檔案 **'data/jobs.json'** 存在且格式正確。詳情請查看控制台 (Console)。</p>
-`;
+            <h2>資料載入錯誤</h2>
+            <p>無法載入職業技能資料。詳情請查看控制台 (Console)。</p>
+        `;
     }
 }
 
